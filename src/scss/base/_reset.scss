@@ -1,0 +1,11 @@
+/* _reset.scss */
+
+/* Box model y espaciados */
+$global-spacing: 1rem;            /* Espaciado global */
+$global-radius: 0.5rem;          /* Radio de bordes global */
+$global-border-width: 1px;       /* Ancho de bordes global */
+
+/* Z-index base */
+$z-index-header: 1000;           /* Z-index para el encabezado */
+$z-index-modal: 1050;            /* Z-index para modales */
+$z-index-toast: 1100;            /* Z-index para notificaciones */

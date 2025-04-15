@@ -1,0 +1,30 @@
+/* _variables.scss */
+
+/* Paleta de colores */
+
+/* Colores base principales */
+$color-primary-dark: #2a1452;        /* Color principal profundo (fondo) */
+$color-primary: #5d3b8c;             /* Morado base (componentes clave) */
+$color-accent-gold: #d4af37;         /* Dorado elegante (bordes, títulos) */
+$color-white: #ffffff;               /* Blanco neutro para texto/fondo */
+$color-primary-deep-dark: #1a0f30;   /* Más oscuro aún (modales, overlay) */
+$color-brown: #5a3825;               /* Marrón cálido adicional */
+
+/* Colores para alertas / feedback */
+$alert-success: #5fcaa7;             /* Verde suave para éxito */
+$alert-info: #6dc8da;                /* Celeste claro para información */
+$alert-warning: #f2b774;             /* Amarillo suave para advertencias */
+$alert-danger: #e67f88;              /* Rojo claro para errores */
+
+/* Fondos y superficies */
+$background: $color-primary-dark;    /* Fondo general */
+$card-bg: #3a2667;                   /* Fondo de tarjetas y cajas */
+$border-color: $color-primary;       /* Bordes activos */
+
+/* Sombras */
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+/* Opacidades y overlays */
+$overlay-bg: rgba(42, 20, 82, 0.8);
