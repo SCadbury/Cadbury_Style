@@ -1,0 +1,133 @@
+// ==INICIO A SECCION DE REDONDEOS==
+// Variables de colores
+$color-1: #2a1452; // purpura oscuro
+$color-2: #5d3b8c; // violeta
+$color-3: #d4af37; // dorado 
+$color-4: #1a0f30; // casi negro
+$color-5: #ffffff; // blanco 
+
+// Mezclas de colores
+$mix-color-1: mix($color-3, $color-1, 60%);
+$mix-color-2: mix($color-2, $color-5, 40%);
+
+//Estilo base
+%box-style {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: $color-5;
+    border-radius: 6px;
+    width: auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  // -------------------------
+  //Border 1 (purpura + dorado)
+  $border-1-colors: (
+    $mix-color-1,
+    lighten($mix-color-1, 20%),
+    darken($mix-color-1, 20%),
+    $mix-color-1,
+    darken($mix-color-1, 10%),
+  );
+  
+  @for $i from 1 through 5 {
+    .border-red-1-#{$i}-solid {
+      @extend %box-style;
+      border: 2px solid nth($border-1-colors, $i);
+    }
+    .border-red-1-#{$i}-dashed {
+      @extend %box-style;
+      border: 2px dashed nth($border-1-colors, $i);
+    }
+  }
+  
+  //Border 2 (violeta)
+  $border-2-colors: (
+    $color-2,
+    lighten($color-2, 20%),
+    darken($color-2, 20%),
+    $mix-color-2,
+    darken($mix-color-2, 10%),
+  );
+  
+  @for $i from 1 through 5 {
+    .border-red-2-#{$i}-solid {
+      @extend %box-style;
+      border: 2px solid nth($border-2-colors, $i);
+    }
+    .border-red-2-#{$i}-dashed {
+      @extend %box-style;
+      border: 2px dashed nth($border-2-colors, $i);
+    }
+  }
+  
+  //Border 3 (dorado)
+  $border-3-colors: (
+    $color-3,
+    lighten($color-3, 20%),
+    darken($color-3, 20%),
+    $color-3,
+    darken($color-3, 10%),
+  );
+  
+  @for $i from 1 through 5 {
+    .border-red-3-#{$i}-solid {
+      @extend %box-style;
+      border: 3px solid nth($border-3-colors, $i);
+    }
+    .border-red-3-#{$i}-dashed {
+      @extend %box-style;
+      border: 3px dashed nth($border-3-colors, $i);
+    }
+  }
+  
+  //Border 4 (negro + violeta)
+  $border-4-colors: (
+    $mix-color-2,
+    lighten($color-4, 20%),
+    darken($mix-color-2, 20%),
+    $color-4,
+    darken($mix-color-2, 40%),
+  );
+  
+  @for $i from 1 through 5 {
+    .border-red-4-#{$i}-solid {
+      @extend %box-style;
+      border: 4px solid nth($border-4-colors, $i);
+    }
+    .border-red-4-#{$i}-dashed {
+      @extend %box-style;
+      border: 4px dashed nth($border-4-colors, $i);
+    }
+  }
+  
+//Border 5 (gradiente rojizo en borde)
+$border-5-base-colors: (
+  #ff6347, // tomato
+  lighten(#ff6347, 20%),
+  darken(#ff6347, 20%),
+  #b22222, // firebrick
+  darken(#b22222, 10%)
+);
+
+@for $i from 1 through 5 {
+  .border-red-5-#{$i}-solid {
+    @extend %box-style;
+    border: 5px solid;
+    border-image: linear-gradient(
+      to right,
+      nth($border-5-base-colors, $i),
+      lighten(nth($border-5-base-colors, $i), 20%),
+      darken(nth($border-5-base-colors, $i), 20%)
+    ) 1;
+  }
+
+  .border-red-5-#{$i}-dashed {
+    @extend %box-style;
+    border: 5px dashed;
+    border-color: nth($border-5-base-colors, $i);
+  }
+}
+// ==FIN A SECCION DE REDONDEOS==

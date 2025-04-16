@@ -1,0 +1,21 @@
+// == INICIO DE APRATADO PARA OCULTAR ELEMENTOS ====
+.visible-hidden {
+    visibility: hidden; // oculto pero con espacio
+  }
+  
+  .full-hidden {
+    display: none; // oculto completamente sin espacio
+  }
+  //oculto, solamente visible para modos de lectura
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  // == FIN DE APRATADO PARA OCULTAR ELEMENTOS ====
