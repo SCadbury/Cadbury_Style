@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* _variables.scss */
+/* Paleta de colores base — Cadbury */
+/* Colores para alertas y feedback */
+/* Sombras */
+/* Opacidades y overlays */
+/* Paletas por modo */
+/* Modo Oscuro */
+/* Modo Claro */
+.navbar {
+  background-color: #5d3b8c;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  height: 60px;
+  font-size: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  transition: background-color 0.3s ease;
+}
+.navbar .navbar-logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.navbar .navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navbar .navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.navbar .navbar-links a:hover {
+  color: #d4af37;
+  transform: scale(1.05);
+}
+.navbar .theme-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+.navbar .theme-toggle-btn:hover {
+  color: #d4af37;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .navbar .navbar-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .navbar .navbar-links a {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .navbar .theme-toggle-btn {
+    align-self: flex-end;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+    gap: 0.5rem;
+  }
+  .navbar .navbar-logo {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar .navbar-toggle {
+    align-self: flex-end;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar .navbar-links a {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .navbar .theme-toggle-btn {
+    align-self: flex-end;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.75rem 1.5rem;
+  }
+  .navbar .navbar-logo {
+    font-size: 1.5rem;
+  }
+  .navbar .navbar-links {
+    gap: 1.25rem;
+  }
+  .navbar .navbar-links a {
+    font-size: 0.95rem;
+  }
+  .navbar .theme-toggle-btn {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  .navbar .navbar-links {
+    gap: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=mi-libreria.css.map */
