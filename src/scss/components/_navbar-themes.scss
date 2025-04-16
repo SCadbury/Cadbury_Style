@@ -1,0 +1,61 @@
+.navbar-deep {
+    background-color: $color-primary-dark;
+    color: $color-white;
+  
+    a {
+      color: $color-white;
+  
+      &:hover {
+        color: $color-accent-gold;
+      }
+    }
+  
+    .theme-toggle-btn {
+      color: $color-white;
+  
+      &:hover {
+        color: $color-accent-gold;
+      }
+    }
+  }
+  .navbar-coffee {
+    background-color: $color-brown;
+    color: $color-accent-gold;
+  
+    a {
+      color: $color-accent-gold;
+  
+      &:hover {
+        color: $color-white;
+      }
+    }
+  
+    .theme-toggle-btn {
+      color: $color-accent-gold;
+  
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+  .navbar-royal {
+    background-color: $color-primary;
+    color: $color-white;
+  
+    a {
+      color: $color-white;
+  
+      &:hover {
+        color: $color-accent-gold;
+      }
+    }
+  
+    .theme-toggle-btn {
+      color: $color-white;
+  
+      &:hover {
+        color: $color-accent-gold;
+      }
+    }
+  }
+  
