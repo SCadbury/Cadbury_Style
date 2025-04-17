@@ -1,0 +1,59 @@
+@use '../base/variables' as *;
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.40rem 0.55rem;
+  border-radius: 1000px;
+  text-transform: uppercase;
+  white-space: wrap;
+  transition: all 0.25s ease;
+  line-height: 1;
+}
+
+// === ESTILOS VISUALES BIEN DIFERENCIADOS ===
+.badge-solid {
+  color: $color-white;
+}
+
+.badge-minimal {
+  background-color: transparent !important;
+  border: 2px solid currentColor;
+  color: inherit;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.badge-ghost {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #777 !important;
+  font-weight: normal;
+  border: none;
+  letter-spacing: 0.5px;
+}
+
+// === VARIANTES FUNCIONALES ===
+.badge-primary {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.badge-secondary {
+  background-color: #bbb;
+  color: #222;
+}
+
+.badge-warning {
+  background-color: $alert-warning;
+  color: #4d2e00;
+}
+
+.badge-featured {
+  background-color: $color-accent-gold;
+  color: $color-primary-dark;
+}
+
+.badge-disabled {
+  background-color: #e0e0e0;
+  color: #999;
+}

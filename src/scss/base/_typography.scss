@@ -156,3 +156,7 @@ $text-color-danger: variables.$alert-danger;                        //Rojo claro
 .text-danger{
     color: $text-color-danger;
 }
+$text-color-primary: $color-white;         // Blanco para el texto principal
+$text-color-secondary: $color-primary;    // Morado para subtítulos o textos secundarios
+$text-color-muted: #a29eb6;               // Gris para textos menos destacados
+$text-color-dark: #000000;                // Color negro 
