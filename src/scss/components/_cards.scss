@@ -1,0 +1,247 @@
+@use '../base/reset' as r;
+@use '../base/typography' as t;
+@use '../base/variables' as v;
+
+/*********************************************************/
+/*                    CARD BASE                          */
+/*********************************************************/
+%card-base {
+  width: 100%;
+  margin: r.$global-spacing;
+  height: 100%;
+  border-radius: r.$global-radius;
+  overflow: hidden;
+  box-shadow: v.$shadow-md;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+/*********************************************************/
+/*            CARD NUMERO 1 — MOVIMIENTO EN Y            */
+/*********************************************************/
+.Tarjeta__1 {
+  @extend %card-base;
+  background: v.$color-primary-deep-dark;
+
+  &:hover {
+    transform: translateY(-3%);
+  }
+
+  img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: r.$global-radius r.$global-radius 0 0;
+  }
+
+  .card1__contenido {
+    padding: r.$global-spacing;
+    text-align: center;
+
+    h3 {
+      font-weight: t.$font-weight-regular;
+      margin-bottom: r.$global-spacing;
+      color: v.$color-accent-gold;
+      font-family: t.$font-primary;
+    }
+
+    p {
+      line-height: 1.5;
+      color: v.$color-white;
+      font-family: t.$font-secondary;
+    }
+
+    a {
+      margin-top: r.$global-spacing;
+      display: inline-block;
+      padding: r.$global-spacing 1.2rem;
+      color: v.$color-accent-gold;
+      text-decoration: none;
+      border: r.$global-border-width solid v.$color-primary;
+      border-radius: r.$global-radius;
+      transition: all 400ms ease;
+      font-family: t.$font-secondary;
+
+      &:hover {
+        background-color: v.$color-primary;
+        color: v.$color-white;
+      }
+    }
+  }
+}
+
+/*********************************************************/
+/*            CARD NUMERO 2 — MOVIMIENTO EN X            */
+/*********************************************************/
+.Tarjeta__2 {
+  @extend %card-base;
+  background: v.$color-primary-dark;
+
+  &:hover {
+    transform: translateX(-3%);
+  }
+
+  img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: r.$global-radius r.$global-radius 0 0;
+  }
+
+  .card2__contenido {
+    padding: r.$global-spacing;
+    text-align: center;
+
+    h3 {
+      font-weight: t.$font-weight-regular;
+      margin-bottom: r.$global-spacing;
+      color: v.$color-accent-gold;
+      font-family: t.$font-primary;
+    }
+
+    p {
+      line-height: 1.5;
+      color: v.$color-white;
+      font-family: t.$font-secondary;
+    }
+
+    a {
+      margin-top: r.$global-spacing;
+      display: inline-block;
+      padding: r.$global-spacing 1.2rem;
+      color: v.$color-accent-gold;
+      text-decoration: none;
+      border: r.$global-border-width solid v.$color-primary;
+      border-radius: r.$global-radius;
+      transition: all 400ms ease;
+      font-family: t.$font-secondary;
+
+      &:hover {
+        background-color: v.$color-primary;
+        color: v.$color-white;
+      }
+    }
+  }
+}
+
+/*********************************************************/
+/*            CARD NUMERO 3 — DESCRIPTIVA                */
+/*********************************************************/
+.card_3 {
+  width: 250px;
+  height: 400px;
+  border-radius: r.$global-radius;
+  background: v.$color-primary;
+  background-size: cover;
+  box-shadow: v.$shadow-md;
+  margin: r.$global-spacing;
+  overflow: hidden;
+  text-transform: lowercase;
+  font-family: t.$font-secondary;
+
+  div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  h2 {
+    color: v.$color-white;
+    margin: r.$global-spacing 0;
+    font-size: t.$font-size-xl;
+    font-family: t.$font-primary;
+  }
+
+  a {
+    color: v.$color-white;
+    margin: r.$global-spacing 0;
+    font-size: t.$font-size-sm;
+    background-color: v.$color-primary-dark;
+    text-decoration: none;
+    padding: r.$global-spacing 1.2rem;
+    border: none;
+    border-radius: r.$global-radius;
+    font-family: t.$font-secondary;
+
+    &:hover {
+      background-color: v.$color-accent-gold;
+      color: v.$color-primary-dark;
+    }
+  }
+
+  &:hover div {
+    opacity: 1;
+    transform: translateY(-3%);
+    transition: all 2s;
+  }
+}
+
+/*********************************************************/
+/*            CARD NUMERO 4 — CABALLADA                  */
+/*********************************************************/
+.card_4 {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  margin: r.$global-spacing;
+  border-radius: r.$global-radius;
+  overflow: hidden;
+  box-shadow: v.$shadow-md;
+  transition: all 400ms ease;
+  cursor: pointer;
+  font-family: t.$font-secondary;
+}
+
+.card_4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: r.$global-radius;
+  transition: transform 400ms ease;
+}
+
+.card_4 .intro {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: r.$global-spacing;
+  background: rgba(0, 0, 0, 0.5);
+  color: v.$color-white;
+  border-bottom-left-radius: r.$global-radius;
+  border-bottom-right-radius: r.$global-radius;
+  transition: all 400ms ease;
+}
+
+.card_4 .intro h1 {
+  font-family: t.$font-primary;
+  margin: 0 0 r.$global-spacing 0;
+  font-size: t.$font-size-lg;
+}
+
+.card_4 .intro p {
+  font-size: t.$font-size-sm;
+  margin: 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 400ms ease, max-height 400ms ease;
+}
+
+.card_4:hover img {
+  transform: scale(1.05);
+}
+
+.card_4:hover .intro p {
+  opacity: 1;
+  max-height: 100px;
+}
+
