@@ -1,0 +1,61 @@
+/* _variables.scss */
+
+/* Paleta de colores base — Cadbury */
+$color-primary-dark: #2a1452;        // Morado oscuro profundo.
+$color-primary: #5d3b8c;             // Morado base.
+$color-accent-gold: #d4af37;         // Dorado elegante.
+$color-white: #ffffff;               // Blanco neutro.
+$color-primary-deep-dark: #1a0f30;   // Casi negro morado.
+$color-brown: #5a3825;               // Marrón cálido.
+
+/* Colores para alertas y feedback */
+$alert-success: #5fcaa7;             // Verde suave.
+$alert-info: #6dc8da;                // Celeste claro.
+$alert-warning: #f2b774;             // Amarillo suave.
+$alert-danger: #e67f88;              // Rojo claro.
+
+/* Sombras */
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);      // Sombra pequeña.
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);     // Sombra mediana.
+$shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.2);    // Sombra grande.
+
+/* Opacidades y overlays */
+$overlay-bg: rgba(42, 20, 82, 0.8);            // Fondo semitransparente para overlay.
+
+/* Paletas por modo */
+
+/* Modo Oscuro */
+$dark-theme: (
+  background: linear-gradient(135deg, $color-primary-deep-dark, $color-primary-dark, $color-brown),
+  card-bg: rgba(58, 38, 103, 0.9),
+  border-color: $color-primary,
+  text-color: $color-white,
+  text-muted: #a29eb6
+);
+
+/* Modo Claro */
+$light-theme: (
+  background: $color-white,
+  card-bg: #f7f5fb,
+  border-color: $color-primary,
+  text-color: $color-primary-dark,
+  text-muted: #5d3b8c
+);
+
+// ========== Navbar ==========
+
+$navbar-bg:           $color-primary !default;
+$navbar-text:         $color-white !default;
+$navbar-hover:        $color-accent-gold !default;
+$navbar-height:       60px !default;
+$navbar-padding-y:    1.2rem !default;
+$navbar-padding-x:    2rem !default;
+$navbar-font-size:    1rem !default;
+$navbar-z-index:      1000 !default;
+$navbar-shadow:       0 2px 6px rgba(0, 0, 0, 0.15) !default;
+
+//Breakpoints (Responsive Design)
+$breakpoint-xs: 480px !default;   // Teléfonos pequeños
+$breakpoint-sm: 768px !default;   // Teléfonos grandes / tablets
+$breakpoint-md: 992px !default;   // Laptops
+$breakpoint-lg: 1200px !default;  // Pantallas grandes

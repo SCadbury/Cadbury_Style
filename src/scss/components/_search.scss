@@ -1,0 +1,37 @@
+@use '../base/variables' as *;
+.navbar-search {
+    margin-left: auto;
+    margin-right: 1rem;
+  
+    .form-control {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: $color-primary-dark;
+      box-shadow: $shadow-sm;
+      transition: all 0.2s ease;
+  
+      &::placeholder {
+        color: #999;
+      }
+  
+      &:focus {
+        outline: none;
+        border-color: $color-accent-gold;
+        box-shadow: 0 0 0 3px rgba($color-accent-gold, 0.25);
+      }
+    }
+  }
+  @media (max-width: $breakpoint-sm) {
+    .navbar-search {
+      width: 100%;
+      margin-top: 0.5rem;
+  
+      .form-control {
+        width: 100%;
+      }
+    }
+  }
+  

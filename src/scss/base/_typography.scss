@@ -1,0 +1,24 @@
+/* _typography.scss */
+
+/* Tipografías */
+$font-primary: 'Cormorant Garamond', serif;  // Elegante para títulos
+$font-secondary: 'Lato', sans-serif;         // Clara y legible para texto base
+
+/* Tamaños de fuentes */
+$font-size-xs: 0.75rem;   // Extra pequeño
+$font-size-sm: 0.875rem;  // Pequeño
+$font-size-md: 1rem;     // Medio
+$font-size-lg: 1.25rem;  // Grande
+$font-size-xl: 2rem;     // Extra grande
+
+/* Pesos de fuentes */
+$font-weight-light: 300;    // Ligero
+$font-weight-regular: 400;  // Regular
+$font-weight-semibold: 600; // Semibold
+$font-weight-bold: 700;     // Negrita
+
+/* Colores de texto */
+$text-color-primary: $color-white;         // Blanco para el texto principal
+$text-color-secondary: $color-primary;    // Morado para subtítulos o textos secundarios
+$text-color-muted: #a29eb6;               // Gris para textos menos destacados
+$text-color-dark: #000000;                // Color negro 
