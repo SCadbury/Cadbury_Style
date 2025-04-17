@@ -247,5 +247,122 @@
     width: 100%;
   }
 }
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.container-outline {
+  border: 2px dashed #d4af37;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  background-color: rgba(212, 175, 55, 0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container-image-bg {
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.container-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 30vh;
+  padding: 2rem;
+}
+
+.container,
+.container-fluid,
+.container-outline,
+.container-image-bg,
+.container-code,
+.container-code::before,
+.container-centered {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.container-code {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 0.95rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.container-code::before {
+  content: "Code";
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  color: #858585;
+  text-transform: uppercase;
+}
+
+/*Colores de la sintaxis */
+.container-code .comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.container-code .variable {
+  color: #9cdcfe;
+}
+
+.container-code .string {
+  color: #ce9178;
+}
+
+.container-code .function {
+  color: #dcdcaa;
+}
+
+.container-code .number {
+  color: #b5cea8;
+}
 
 /*# sourceMappingURL=mi-libreria.css.map */
