@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 .navbar-deep {
     background-color: $color-primary-dark;
     color: $color-white;
