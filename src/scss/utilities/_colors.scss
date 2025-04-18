@@ -4,42 +4,25 @@
 @use '../base/typography';
 @use 'sass:color'; //importe del modulo de color
 
-//estilo base para los fondos
-%bg-box {
-  display: inline-block;
-  padding: 0.75rem 1.25rem;
-  margin: 0.5rem;
-  border-radius: 0.5rem;
-  width: auto;
-  box-sizing: border-box;
-  text-align: center;
-}
-
 //fondos solidos (1 al 5)
 .bg-color-1 {
-  @extend %bg-box;
   background-color: vars.$color-secondary-purple;
 }
 .bg-color-2 {
-  @extend %bg-box;
   background-color: vars.$color-primary;
 }
 .bg-color-3 {
-  @extend %bg-box;
   background-color: vars.$color-accent-gold;
 }
 .bg-color-4 {
-  @extend %bg-box;
   background-color: vars.$color-primary-deep-dark;
 }
 .bg-color-5 {
-  @extend %bg-box;
   background-color: vars.$color-light-red;
 }
 
 //fondos gradientes (6 al 8)
 .bg-color-6-grad {
-  @extend %bg-box;
   background-image: linear-gradient(
     135deg,
     vars.$color-teal,
@@ -48,7 +31,6 @@
   );
 }
 .bg-color-7-grad {
-  @extend %bg-box;
   background-image: linear-gradient(
     135deg,
     vars.$color-dark-yellow,
@@ -57,7 +39,6 @@
   );
 }
 .bg-color-8-grad {
-  @extend %bg-box;
   background-image: linear-gradient(
     135deg,
     vars.$color-pale-pink,

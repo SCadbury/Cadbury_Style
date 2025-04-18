@@ -7,17 +7,6 @@
 $mix-color-1: color.mix(vars.$color-accent-gold, vars.$color-primary-dark, 60%);
 $mix-color-2: color.mix(vars.$color-primary, vars.$color-white, 40%);
 
-//estilo base
-%box-style {
-  display: inline-block;
-  margin: 1rem auto;
-  padding: 1rem;
-  border-radius: 6px;
-  width: auto;
-  text-align: center;
-  box-sizing: border-box;
-}
-
 //border 1 (purpura + dorado)
 $border-1-colors: (
   $mix-color-1,
@@ -29,11 +18,9 @@ $border-1-colors: (
 
 @for $i from 1 through 5 {
   .border-red-1-#{$i}-solid {
-    @extend %box-style;
     border: 2px solid list.nth($border-1-colors, $i);  
   }
   .border-red-1-#{$i}-dashed {
-    @extend %box-style;
     border: 2px dashed list.nth($border-1-colors, $i);
   }
 }
@@ -49,11 +36,9 @@ $border-2-colors: (
 
 @for $i from 1 through 5 {
   .border-red-2-#{$i}-solid {
-    @extend %box-style;
     border: 2px solid list.nth($border-2-colors, $i);  
   }
   .border-red-2-#{$i}-dashed {
-    @extend %box-style;
     border: 2px dashed list.nth($border-2-colors, $i);  
   }
 }
@@ -69,11 +54,9 @@ $border-3-colors: (
 
 @for $i from 1 through 5 {
   .border-red-3-#{$i}-solid {
-    @extend %box-style;
     border: 3px solid list.nth($border-3-colors, $i);  
   }
   .border-red-3-#{$i}-dashed {
-    @extend %box-style;
     border: 3px dashed list.nth($border-3-colors, $i); 
   }
 }
@@ -89,11 +72,9 @@ $border-4-colors: (
 
 @for $i from 1 through 5 {
   .border-red-4-#{$i}-solid {
-    @extend %box-style;
     border: 4px solid list.nth($border-4-colors, $i);
   }
   .border-red-4-#{$i}-dashed {
-    @extend %box-style;
     border: 4px dashed list.nth($border-4-colors, $i);
   }
 }
@@ -109,7 +90,6 @@ $border-5-base-colors: (
 
 @for $i from 1 through 5 {
   .border-red-5-#{$i}-solid {
-    @extend %box-style;
     border: 5px solid;
     border-image: linear-gradient(
       to right,
@@ -120,7 +100,6 @@ $border-5-base-colors: (
   }
 
   .border-red-5-#{$i}-dashed {
-    @extend %box-style;
     border: 5px dashed;
     border-color: list.nth($border-5-base-colors, $i);
   }
