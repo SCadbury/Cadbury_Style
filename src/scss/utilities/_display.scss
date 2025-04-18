@@ -27,6 +27,18 @@
 .d-inline-flex{
   display: inline-flex;
 }
+.flex-direction-c{
+  flex-direction: column;
+}
+.flex-direction-cr{
+  flex-direction: column-reverse;
+}
+.flex-direction-r{
+  flex-direction: row;
+}
+.flex-direction-rr{
+  flex-direction: row-reverse;
+}
 .justify-start{
   justify-content: flex-start;
 }
