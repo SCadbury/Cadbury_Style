@@ -1,3 +1,4 @@
+@use 'variables';
 /* _typography.scss */
 
 /* Tipografías */
@@ -5,11 +6,27 @@ $font-primary: 'Cormorant Garamond', serif;  // Elegante para títulos
 $font-secondary: 'Lato', sans-serif;         // Clara y legible para texto base
 
 /* Tamaños de fuentes */
-$font-size-xs: 0.75rem;   // Extra pequeño
-$font-size-sm: 0.875rem;  // Pequeño
-$font-size-md: 1rem;     // Medio
-$font-size-lg: 1.25rem;  // Grande
-$font-size-xl: 2rem;     // Extra grande
+$font-size-10: 10px;
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-22: 22px;
+$font-size-24: 24px;
+$font-size-26: 26px;
+$font-size-28: 28px;
+$font-size-30: 30px;
+$font-size-32: 32px;
+$font-size-34: 34px;
+$font-size-36: 36px;
+$font-size-38: 38px;
+$font-size-40: 40px;
+$font-size-42: 42px;
+$font-size-44: 44px;
+$font-size-46: 46px;
+$font-size-48: 48px;
+$font-size-50: 50px;
 
 /* Pesos de fuentes */
 $font-weight-light: 300;    // Ligero
@@ -18,7 +35,124 @@ $font-weight-semibold: 600; // Semibold
 $font-weight-bold: 700;     // Negrita
 
 /* Colores de texto */
-$text-color-primary: $color-white;         // Blanco para el texto principal
-$text-color-secondary: $color-primary;    // Morado para subtítulos o textos secundarios
-$text-color-muted: #a29eb6;               // Gris para textos menos destacados
-$text-color-dark: #000000;                // Color negro 
+$text-color-primary-dark: variables.$color-primary-dark;            //Morado oscuro profundo
+$text-color-primary: variables.$color-primary;                      //Morado Base
+$text-color-accent-gold: variables.$color-accent-gold;              //Dorado elegente
+$text-color-white: variables.$color-white;                          //Blanco neutro
+$text-color-primary-deep-dark: variables.$color-primary-deep-dark;  //Casi negro morado
+$text-color-brown: variables.$color-brown;                          //Marrón cálido
+$text-color-success: variables.$alert-success;                      //Verde suave
+$text-color-info: variables.$alert-info;                            //Celeste                                            
+$text-color-warning: variables.$alert-warning;                      //Amarillo suave                      
+$text-color-danger: variables.$alert-danger;                        //Rojo claro                      
+
+/*Clases para los tamaños del texto*/
+.text-10{
+    font-size: $font-size-10;
+}
+.text-12{
+    font-size: $font-size-12;
+}
+.text-14{
+    font-size: $font-size-14;
+}
+.text-16{
+    font-size: $font-size-16;
+}
+.text-18{
+    font-size: $font-size-18;
+}
+.text-20{
+    font-size: $font-size-20;
+}
+.text-22{
+    font-size: $font-size-22;
+}
+.text-24{
+    font-size: $font-size-24;
+}
+.text-26{
+    font-size: $font-size-26;
+}
+.text-28{
+    font-size: $font-size-28;
+}
+.text-30{
+    font-size: $font-size-30;
+}
+.text-32{
+    font-size: $font-size-32;
+}
+.text-34{
+    font-size: $font-size-34;
+}
+.text-36{
+    font-size: $font-size-36;
+}
+.text-38{
+    font-size: $font-size-38;
+}
+.text-40{
+    font-size: $font-size-40;
+}
+.text-42{
+    font-size: $font-size-42;
+}
+.text-44{
+    font-size: $font-size-44;
+}
+.text-46{
+    font-size: $font-size-46;
+}
+.text-48{
+    font-size: $font-size-48;
+}
+.text-50{
+    font-size: $font-size-50;
+}
+
+/*Clases para los pesos del texto*/
+.text-light{
+    font-weight: $font-weight-light;
+}
+.text-regular{
+    font-weight: $font-weight-regular;
+}
+.text-semibold{
+    font-weight: $font-weight-semibold;
+}
+.text-bold{
+    font-weight: $font-weight-bold;
+}
+
+/*Clases para modificar el color del texto*/
+.text-primary-dark{
+    color: $text-color-primary-dark;
+}
+.text-primary{
+    color: $text-color-primary;
+}
+.text-accent-gold{
+    color: $text-color-accent-gold;
+}
+.text-white{
+    color: $text-color-white;
+}
+.text-primary-deep-dark{
+    color: $text-color-primary-deep-dark;
+}
+.text-brown{
+    color: $text-color-brown;
+}
+.text-success{
+    color: $text-color-success;
+}
+.text-info{
+    color: $text-color-info;
+}
+.text-warning{
+    color: $text-color-warning;
+}
+.text-danger{
+    color: $text-color-danger;
+}

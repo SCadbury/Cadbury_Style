@@ -1,3 +1,32 @@
+/*Clases para mover elementos*/
+.d-flex{
+    display: flex;
+}
+.d-inline-flex{
+    display: inline-flex;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+.align-center{
+    align-items: center;
+}
+.align-end{
+    align-items: flex-end;
+}
 // == INICIO DE APRATADO PARA OCULTAR ELEMENTOS ====
 .visible-hidden {
     visibility: hidden; // oculto pero con espacio
