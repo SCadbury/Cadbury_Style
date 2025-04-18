@@ -1,3 +1,4 @@
+@use '../base/variables';
 /* _typography.scss */
 
 /* Tipografías */
@@ -34,7 +35,13 @@ $font-weight-semibold: 600; // Semibold
 $font-weight-bold: 700;     // Negrita
 
 /* Colores de texto */
-$text-color-primary: $color-white;         // Blanco para el texto principal
-$text-color-secondary: $color-primary;    // Morado para subtítulos o textos secundarios
-$text-color-muted: #a29eb6;               // Gris para textos menos destacados
-$text-color-dark: #000000;                // Color negro 
+$text-color-primary-dark: variables.$color-primary-dark;
+$text-color-primary: variables.$color-primary;
+$text-color-accent-gold: variables.$color-accent-gold;
+$text-color-white: variables.$color-white;
+$text-color-primary-deep-dark: variables.$color-primary-deep-dark;
+$text-color-brown: variables.$color-brown;
+$text-color-success: variables.$alert-success;
+$text-color-info: variables.$alert-info;
+$text-color-warning: variables.$alert-warning;
+$text-color-danger: variables.$alert-danger;

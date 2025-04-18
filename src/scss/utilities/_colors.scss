@@ -1,5 +1,7 @@
+
 //====INICIO DEL APARTADO DE COLORES DE FONDO=====
 @use '../base/variables' as vars;
+@use '../base/typography';
 @use 'sass:color'; //importe del modulo de color
 
 //estilo base para los fondos
@@ -64,3 +66,35 @@
   );
 }
 //====FIN DEL APARTADO DE COLORES DE FONDO=====
+
+/*Clases para el color del texto*/
+.text-color-primary-dark{
+  color: typography.$text-color-primary-dark;
+}
+.text-color-primary{
+  color: typography.$text-color-primary;
+}
+.text-color-accent-gold{
+  color: typography.$text-color-accent-gold;
+}
+.text-color-white{
+  color: typography.$text-color-white;
+}
+.text-color-primary-deep-dark{
+  color: typography.$text-color-primary-deep-dark;
+}
+.text-color-brown{
+  color: typography.$text-color-brown;
+}
+.text-color-success{
+  color: typography.$text-color-success;
+}
+.text-color-info{
+  color: typography.$text-color-info;
+}
+.text-color-warning{
+  color: typography.$text-color-warning;
+}
+.text-color-danger{
+  color: typography.$text-color-danger;
+}
