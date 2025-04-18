@@ -1,0 +1,44 @@
+.formulario {
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+   flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MediaQuery para ajustes en diferentes tamaños de pantalla */
+
+@media(max-width:500px){
+    .sm-column{
+        flex-direction: column;
+    }
+    .sm-row{
+        flex-direction: row;
+    }
+}
+
+@media (min-width:501px) and (max-width:1023px){
+    .md-column{
+        flex-direction: column;
+    }
+    .md-row{
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1024px){
+    .bg-column{
+        flex-direction: column;
+    }
+    .bg-row{
+        flex-direction: row;
+    }
+}
