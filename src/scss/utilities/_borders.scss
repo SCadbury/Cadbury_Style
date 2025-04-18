@@ -1,24 +1,17 @@
 // ======INICIO DEL APARTADO COLORES DE FONDO======
+@use '../base/variables' as vars;
 @use 'sass:color'; //importe el modulo de colores
 @use 'sass:list';  //importe del modulo para trabajar con listas
 
-//variables de colores
-$color-1: #2a1452; // purpura oscuro
-$color-2: #5d3b8c; // violeta
-$color-3: #d4af37; // dorado 
-$color-4: #1a0f30; // casi negro
-$color-5: #ffffff; // blanco 
-
 //mezclas de colores usando color.mix()
-$mix-color-1: color.mix($color-3, $color-1, 60%);
-$mix-color-2: color.mix($color-2, $color-5, 40%);
+$mix-color-1: color.mix(vars.$color-3, vars.$color-1, 60%);
+$mix-color-2: color.mix(vars.$color-2, vars.$color-5, 40%);
 
 //estilo base
 %box-style {
   display: inline-block;
   margin: 1rem auto;
   padding: 1rem;
-  color: $color-5;
   border-radius: 6px;
   width: auto;
   text-align: center;
@@ -47,9 +40,9 @@ $border-1-colors: (
 
 //border 2 (violeta)
 $border-2-colors: (
-  $color-2,
-  color.scale($color-2, $lightness: 20%),
-  color.scale($color-2, $lightness: -20%),
+  vars.$color-2,
+  color.scale(vars.$color-2, $lightness: 20%),
+  color.scale(vars.$color-2, $lightness: -20%),
   $mix-color-2,
   color.scale($mix-color-2, $lightness: -10%),
 );
@@ -67,11 +60,11 @@ $border-2-colors: (
 
 //border 3 (dorado)
 $border-3-colors: (
-  $color-3,
-  color.scale($color-3, $lightness: 20%),
-  color.scale($color-3, $lightness: -20%),
-  $color-3,
-  color.scale($color-3, $lightness: -10%),
+  vars.$color-3,
+  color.scale(vars.$color-3, $lightness: 20%),
+  color.scale(vars.$color-3, $lightness: -20%),
+  vars.$color-3,
+  color.scale(vars.$color-3, $lightness: -10%),
 );
 
 @for $i from 1 through 5 {
@@ -88,9 +81,9 @@ $border-3-colors: (
 //border 4 (negro + violeta)
 $border-4-colors: (
   $mix-color-2,
-  color.scale($color-4, $lightness: 20%),
+  color.scale(vars.$color-4, $lightness: 20%),
   color.scale($mix-color-2, $lightness: -20%),
-  $color-4,
+  vars.$color-4,
   color.scale($mix-color-2, $lightness: -40%),
 );
 
@@ -107,11 +100,11 @@ $border-4-colors: (
 
 //border 5 (gradiente rojizo en borde)
 $border-5-base-colors: (
-  #ff6347, // tomato
-  color.scale(#ff6347, $lightness: 20%),
-  color.scale(#ff6347, $lightness: -20%),
-  #b22222, // firebrick
-  color.scale(#b22222, $lightness: -10%)
+  vars.$color-6, // tomato
+  color.scale(vars.$color-6, $lightness: 20%),
+  color.scale(vars.$color-6, $lightness: -20%),
+  vars.$color-6-2, // firebrick
+  color.scale(vars.$color-6-2, $lightness: -10%)
 );
 
 @for $i from 1 through 5 {
