@@ -110,3 +110,17 @@ $text-color-danger: variables.$alert-danger;
 .fs-50{
     font-size: $font-size-50;
 }
+
+/*Clases para los pesos de la fuente*/
+.fw-light{
+    font-weight: $font-weight-light;
+}
+.fw-regular{
+    font-weight: $font-weight-regular;
+}
+.fw-semibold{
+    font-weight: $font-weight-semibold;
+}
+.fw-bold{
+    font-weight: $font-weight-bold;
+}
