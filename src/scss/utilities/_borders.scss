@@ -1,23 +1,161 @@
 @use '../base/variables';
-/*Mapa de colores para los bordes*/
-$border-colors: (
-    primary-dark: variables.$color-primary-dark,
-    primary: variables.$color-primary,
-    accent-gold: variables.$color-accent-gold,
-    white: variables.$color-white,
-    primary-deep-dark: variables.$color-primary-deep-dark,
-    brown: variables.$color-brown,
-    success: variables.$alert-success,
-    info: variables.$alert-info,
-    warning: variables.$alert-warning,
-    danger: variables.$alert-danger
-);
+/*Clases para los bordes de los elementos*/
+/*1 pixel*/
+.border-primary-dark{
+    border: 1px solid variables.$color-primary-dark;
+}
+.border-primary{
+    border: 1px solid variables.$color-primary;
+}
+.border-accent-gold{
+    border: 1px solid variables.$color-accent-gold;
+}
+.border-white{
+    border: 1px solid variables.$color-white;
+}
+.border-primary-deep-dark{
+    border: 1px solid variables.$color-primary-deep-dark;
+}
+.border-brown{
+    border: 1px solid variables.$color-brown;
+}
+.border-success{
+    border: 1px solid variables.$alert-success;
+}
+.border-info{
+    border: 1px solid variables.$alert-info;
+}
+.border-warning{
+    border: 1px solid variables.$alert-warning;
+}
+.border-danger{
+    border: 1px solid variables.$alert-danger;
+}
 
-/*Clases para bordes de 1 a 5 piseles*/
-@each $color-name, $color-value in $border-colors{
-    @for $i from 1 through 5{
-        .border-#{$color-name}-#{$i}{
-            border: #{$i}px solid #{$color-value};
-        }
-    }
+/*2 pixeles*/
+.border-primary-dark-2{
+    border: 2px solid variables.$color-primary-dark;
+}
+.border-primary-2{
+    border: 2px solid variables.$color-primary;
+}
+.border-accent-gold-2{
+    border: 2px solid variables.$color-accent-gold;
+}
+.border-white-2{
+    border: 2px solid variables.$color-white;
+}
+.border-primary-deep-dark-2{
+    border: 2px solid variables.$color-primary-deep-dark;
+}
+.border-brown-2{
+    border: 2px solid variables.$color-brown;
+}
+.border-success-2{
+    border: 2px solid variables.$alert-success;
+}
+.border-info-2{
+    border: 2px solid variables.$alert-info;
+}
+.border-warning-2{
+    border: 2px solid variables.$alert-warning;
+}
+.border-danger-2{
+    border: 2px solid variables.$alert-danger;
+}
+
+/*3 pixeles*/
+.border-primary-dark-3{
+    border: 3px solid variables.$color-primary-dark;
+}
+.border-primary-3{
+    border: 3px solid variables.$color-primary;
+}
+.border-accent-gold-3{
+    border: 3px solid variables.$color-accent-gold;
+}
+.border-white-3{
+    border: 3px solid variables.$color-white;
+}
+.border-primary-deep-dark-3{
+    border: 3px solid variables.$color-primary-deep-dark;
+}
+.border-brown-3{
+    border: 3px solid variables.$color-brown;
+}
+.border-success-3{
+    border: 3px solid variables.$alert-success;
+}
+.border-info-3{
+    border: 3px solid variables.$alert-info;
+}
+.border-warning-3{
+    border: 3px solid variables.$alert-warning;
+}
+.border-danger-3{
+    border: 3px solid variables.$alert-danger;
+}
+
+/*4 pixeles*/
+.border-primary-dark-4{
+    border: 4px solid variables.$color-primary-dark;
+}
+.border-primary-4{
+    border: 4px solid variables.$color-primary;
+}
+.border-accent-gold-4{
+    border: 4px solid variables.$color-accent-gold;
+}
+.border-white-4{
+    border: 4px solid variables.$color-white;
+}
+.border-primary-deep-dark-4{
+    border: 4px solid variables.$color-primary-deep-dark;
+}
+.border-brown-4{
+    border: 4px solid variables.$color-brown;
+}
+.border-success-4{
+    border: 4px solid variables.$alert-success;
+}
+.border-info-4{
+    border: 4px solid variables.$alert-info;
+}
+.border-warning-4{
+    border: 4px solid variables.$alert-warning;
+}
+.border-danger-4{
+    border: 4px solid variables.$alert-danger;
+}
+
+/*5 pixeles*/
+.border-primary-dark-5{
+    border: 5px solid variables.$color-primary-dark;
+}
+.border-primary-5{
+    border: 5px solid variables.$color-primary;
+}
+.border-accent-gold-5{
+    border: 5px solid variables.$color-accent-gold;
+}
+.border-white-5{
+    border: 5px solid variables.$color-white;
+}
+.border-primary-deep-dark-5{
+    border: 5px solid variables.$color-primary-deep-dark;
+}
+.border-brown-5{
+    border: 5px solid variables.$color-brown;
+}
+.border-success-5{
+    border: 5px solid variables.$alert-success;
+}
+.border-info-5{
+    border: 5px solid variables.$alert-info;
+}
+.border-warning-5{
+    border: 5px solid variables.$alert-warning;
+}
+.border-danger-5{
+    border: 5px solid variables.$alert-danger;
 }

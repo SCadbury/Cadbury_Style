@@ -5,12 +5,28 @@
 $font-primary: 'Cormorant Garamond', serif;  // Elegante para títulos
 $font-secondary: 'Lato', sans-serif;         // Clara y legible para texto base
 
-/* Tamaños de fuentes de 10 a 50 pixeles*/
-@for $i from 10 through 50 {
-    .fs-#{$i}{
-        font-size: #{$i}px;
-    }
-}
+/* Tamaños de fuentes */
+$font-size-10: 10px;
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-22: 22px;
+$font-size-24: 24px;
+$font-size-26: 26px;
+$font-size-28: 28px;
+$font-size-30: 30px;
+$font-size-32: 32px;
+$font-size-34: 34px;
+$font-size-36: 36px;
+$font-size-38: 38px;
+$font-size-40: 40px;
+$font-size-42: 42px;
+$font-size-44: 44px;
+$font-size-46: 46px;
+$font-size-48: 48px;
+$font-size-50: 50px;
 
 /* Pesos de fuentes */
 $font-weight-light: 300;    // Ligero
@@ -29,6 +45,71 @@ $text-color-success: variables.$alert-success;                      //Verde suav
 $text-color-info: variables.$alert-info;                            //Celeste                                            
 $text-color-warning: variables.$alert-warning;                      //Amarillo suave                      
 $text-color-danger: variables.$alert-danger;                        //Rojo claro                      
+
+/*Clases para los tamaños del texto*/
+.text-10{
+    font-size: $font-size-10;
+}
+.text-12{
+    font-size: $font-size-12;
+}
+.text-14{
+    font-size: $font-size-14;
+}
+.text-16{
+    font-size: $font-size-16;
+}
+.text-18{
+    font-size: $font-size-18;
+}
+.text-20{
+    font-size: $font-size-20;
+}
+.text-22{
+    font-size: $font-size-22;
+}
+.text-24{
+    font-size: $font-size-24;
+}
+.text-26{
+    font-size: $font-size-26;
+}
+.text-28{
+    font-size: $font-size-28;
+}
+.text-30{
+    font-size: $font-size-30;
+}
+.text-32{
+    font-size: $font-size-32;
+}
+.text-34{
+    font-size: $font-size-34;
+}
+.text-36{
+    font-size: $font-size-36;
+}
+.text-38{
+    font-size: $font-size-38;
+}
+.text-40{
+    font-size: $font-size-40;
+}
+.text-42{
+    font-size: $font-size-42;
+}
+.text-44{
+    font-size: $font-size-44;
+}
+.text-46{
+    font-size: $font-size-46;
+}
+.text-48{
+    font-size: $font-size-48;
+}
+.text-50{
+    font-size: $font-size-50;
+}
 
 /*Clases para los pesos del texto*/
 .text-light{

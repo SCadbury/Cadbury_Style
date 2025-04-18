@@ -42,13 +42,18 @@ $light-theme: (
   text-muted: #5d3b8c
 );
 
-/*Espaciados de 0 a 100*/
-$spacer: ();
-@for $i from 0 through 100{
-  @if $i % 4 == 0{
-    $spacer: map-merge($spacer, ($i: #{$i}px))
-  }
-}
+/*Espaciados*/
+$spacer-0: 0px;
+$spacer-1: 5px;
+$spacer-2: 10px;
+$spacer-3: 15px;
+$spacer-4: 20px;
+$spacer-5: 25px;
+$spacer-6: 30px;
+$spacer-7: 35px;
+$spacer-8: 40px;
+$spacer-9: 45px;
+$spacer-10: 50px;
 
 // ========== Navbar ==========
 
