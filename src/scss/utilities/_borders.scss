@@ -4,8 +4,8 @@
 @use 'sass:list';  //importe del modulo para trabajar con listas
 
 //mezclas de colores usando color.mix()
-$mix-color-1: color.mix(vars.$color-3, vars.$color-1, 60%);
-$mix-color-2: color.mix(vars.$color-2, vars.$color-5, 40%);
+$mix-color-1: color.mix(vars.$color-accent-gold, vars.$color-primary-dark, 60%);
+$mix-color-2: color.mix(vars.$color-primary, vars.$color-white, 40%);
 
 //estilo base
 %box-style {
@@ -40,9 +40,9 @@ $border-1-colors: (
 
 //border 2 (violeta)
 $border-2-colors: (
-  vars.$color-2,
-  color.scale(vars.$color-2, $lightness: 20%),
-  color.scale(vars.$color-2, $lightness: -20%),
+  vars.$color-primary,
+  color.scale(vars.$color-primary, $lightness: 20%),
+  color.scale(vars.$color-primary, $lightness: -20%),
   $mix-color-2,
   color.scale($mix-color-2, $lightness: -10%),
 );
@@ -60,11 +60,11 @@ $border-2-colors: (
 
 //border 3 (dorado)
 $border-3-colors: (
-  vars.$color-3,
-  color.scale(vars.$color-3, $lightness: 20%),
-  color.scale(vars.$color-3, $lightness: -20%),
-  vars.$color-3,
-  color.scale(vars.$color-3, $lightness: -10%),
+  vars.$color-accent-gold,
+  color.scale(vars.$color-accent-gold, $lightness: 20%),
+  color.scale(vars.$color-accent-gold, $lightness: -20%),
+  vars.$color-accent-gold,
+  color.scale(vars.$color-accent-gold, $lightness: -10%),
 );
 
 @for $i from 1 through 5 {
@@ -81,9 +81,9 @@ $border-3-colors: (
 //border 4 (negro + violeta)
 $border-4-colors: (
   $mix-color-2,
-  color.scale(vars.$color-4, $lightness: 20%),
+  color.scale(vars.$color-primary-deep-dark, $lightness: 20%),
   color.scale($mix-color-2, $lightness: -20%),
-  vars.$color-4,
+  vars.$color-primary-deep-dark,
   color.scale($mix-color-2, $lightness: -40%),
 );
 
@@ -100,11 +100,11 @@ $border-4-colors: (
 
 //border 5 (gradiente rojizo en borde)
 $border-5-base-colors: (
-  vars.$color-6, // tomato
-  color.scale(vars.$color-6, $lightness: 20%),
-  color.scale(vars.$color-6, $lightness: -20%),
-  vars.$color-6-2, // firebrick
-  color.scale(vars.$color-6-2, $lightness: -10%)
+  vars.$color-light-red, // tomato
+  color.scale(vars.$color-light-red, $lightness: 20%),
+  color.scale(vars.$color-light-red, $lightness: -20%),
+  vars.$color-firebrick, // firebrick
+  color.scale(vars.$color-firebrick, $lightness: -10%)
 );
 
 @for $i from 1 through 5 {

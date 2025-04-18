@@ -16,23 +16,23 @@
 //fondos solidos (1 al 5)
 .bg-color-1 {
   @extend %bg-box;
-  background-color: vars.$color-1-2;
+  background-color: vars.$color-secondary-purple;
 }
 .bg-color-2 {
   @extend %bg-box;
-  background-color: vars.$color-2;
+  background-color: vars.$color-primary;
 }
 .bg-color-3 {
   @extend %bg-box;
-  background-color: vars.$color-3;
+  background-color: vars.$color-accent-gold;
 }
 .bg-color-4 {
   @extend %bg-box;
-  background-color: vars.$color-4;
+  background-color: vars.$color-primary-deep-dark;
 }
 .bg-color-5 {
   @extend %bg-box;
-  background-color: vars.$color-6;
+  background-color: vars.$color-light-red;
 }
 
 //fondos gradientes (6 al 8)
@@ -40,27 +40,27 @@
   @extend %bg-box;
   background-image: linear-gradient(
     135deg,
-    vars.$color-7,
-    color.scale(vars.$color-7, $lightness: 15%),
-    color.scale(vars.$color-7, $lightness: -15%)
+    vars.$color-teal,
+    color.scale(vars.$color-teal, $lightness: 15%),
+    color.scale(vars.$color-teal, $lightness: -15%)
   );
 }
 .bg-color-7-grad {
   @extend %bg-box;
   background-image: linear-gradient(
     135deg,
-    vars.$color-8,
-    color.scale(vars.$color-8, $lightness: 15%),
-    color.scale(vars.$color-8, $lightness: -15%)
+    vars.$color-dark-yellow,
+    color.scale(vars.$color-dark-yellow, $lightness: 15%),
+    color.scale(vars.$color-dark-yellow, $lightness: -15%)
   );
 }
 .bg-color-8-grad {
   @extend %bg-box;
   background-image: linear-gradient(
     135deg,
-    vars.$color-9,
-    color.scale(vars.$color-9, $lightness: 15%),
-    color.scale(vars.$color-9, $lightness: -15%)
+    vars.$color-pale-pink,
+    color.scale(vars.$color-pale-pink, $lightness: 15%),
+    color.scale(vars.$color-pale-pink, $lightness: -15%)
   );
 }
 //====FIN DEL APARTADO DE COLORES DE FONDO=====
