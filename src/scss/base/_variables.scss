@@ -7,6 +7,14 @@ $color-accent-gold: #d4af37;         // Dorado elegante.
 $color-white: #ffffff;               // Blanco neutro.
 $color-primary-deep-dark: #1a0f30;   // Casi negro morado.
 $color-brown: #5a3825;               // Marrón cálido.
+$color-secondary-purple: #381874;    // Morado secundario.
+$color-light-red: #ff6347;           // Rojo claro.
+$color-firebrick: #b22222;           // Rojo firebrick.
+$color-teal: #147c7c;                // Verde azulado.
+$color-dark-yellow: #ceba4d;         // Amarillo oscuro.
+$color-pale-pink: #a16699;           // Rosa palido.
+
+
 
 /* Colores para alertas y feedback */
 $alert-success: #5fcaa7;             // Verde suave.
@@ -59,21 +67,6 @@ $breakpoint-xs: 480px !default;   // Teléfonos pequeños
 $breakpoint-sm: 768px !default;   // Teléfonos grandes / tablets
 $breakpoint-md: 992px !default;   // Laptops
 $breakpoint-lg: 1200px !default;  // Pantallas grandes
-
-//==== Colores para redondeo ====
-
-//colores para redondeo
-$color-1: #2a1452; // purpura oscuro
-$color-1-2: #381874; // purpura oscuro 2
-$color-2: #5d3b8c; // violeta
-$color-3: #d4af37; // dorado 
-$color-4: #1a0f30; // casi negro
-$color-5: #ffffff; // blanco  
-$color-6: #ff6347; // rojo claro
-$color-6-2:#b22222; // firebrick
-$color-7: #147c7c; // verde azulado
-$color-8: #ceba4d; // amarillo oscuro
-$color-9: #a16699; // rosa palido
 
 /*Espaciados*/
 $spacer-0: 0px;
