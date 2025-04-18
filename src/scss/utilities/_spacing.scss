@@ -5,174 +5,37 @@ b = bottom
 s = start (left)
 e = end (right)
 Clases para los márgenes y paddings*/
-//Margins
-.m-0{
-    margin: variables.$spacer-0;
-}
-.m-1{
-    margin: variables.$spacer-1;
-}
-.m-2{
-    margin: variables.$spacer-2;
-}
-.m-3{
-    margin: variables.$spacer-3;
-}
-.m-4{
-    margin: variables.$spacer-4;
-}
-.m-5{
-    margin: variables.$spacer-5;
-}
+@each $key, $value in variables.$spacer{
+    .m-#{$key}{
+        margin: $value;
+    }
+    .p-#{$key}{
+        padding: $value;
+    }
 
-//Margins por niveles
-.mt-1{
-    margin-top: variables.$spacer-1;
-}
-.mb-1{
-    margin-bottom: variables.$spacer-1;
-}
-.ms-1{
-    margin-left: variables.$spacer-1;
-}
-.me-1{
-    margin-right: variables.$spacer-1;
-}
+    .mt-#{$key}{
+        margin-top: $value;
+    }
+    .mb-#{$key}{
+        margin-bottom: $value;
+    }
+    .ms-#{$key}{
+        margin-left: $value;
+    }
+    .me-#{$key}{
+        margin-right: $value;
+    }
 
-.mt-2{
-    margin-top: variables.$spacer-2;
-}
-.mb-2{
-    margin-bottom: variables.$spacer-2;
-}
-.ms-2{
-    margin-left: variables.$spacer-2;
-}
-.me-2{
-    margin-right: variables.$spacer-2;
-}
-
-.mt-3{
-    margin-top: variables.$spacer-3;
-}
-.mb-3{
-    margin-bottom: variables.$spacer-3;
-}
-.ms-3{
-    margin-left: variables.$spacer-3;
-}
-.me-3{
-    margin-right: variables.$spacer-3;
-}
-
-.mt-4{
-    margin-top: variables.$spacer-4;
-}
-.mb-4{
-    margin-bottom: variables.$spacer-4;
-}
-.ms-4{
-    margin-left: variables.$spacer-4;
-}
-.me-4{
-    margin-right: variables.$spacer-4;
-}
-
-.mt-5{
-    margin-top: variables.$spacer-5;
-}
-.mb-5{
-    margin-bottom: variables.$spacer-5;
-}
-.ms-5{
-    margin-left: variables.$spacer-5;
-}
-.me-5{
-    margin-right: variables.$spacer-5;
-}
-
-//Paddings
-.p-0{
-    padding: variables.$spacer-0;
-}
-.p-1{
-    padding: variables.$spacer-1;
-}
-.p-2{
-    padding: variables.$spacer-2;
-}
-.p-3{
-    padding: variables.$spacer-3;
-}
-.p-4{
-    padding: variables.$spacer-4;
-}
-.p-5{
-    padding: variables.$spacer-5;
-}
-
-//Paddings por niveles
-.pt-1{
-    padding-top: variables.$spacer-1;
-}
-.pb-1{
-    padding-bottom: variables.$spacer-1;
-}
-.ps-1{
-    padding-left: variables.$spacer-1;
-}
-.pe-1{
-    padding-right: variables.$spacer-1;
-}
-
-.pt-2{
-    padding-top: variables.$spacer-2;
-}
-.pb-2{
-    padding-bottom: variables.$spacer-2;
-}
-.ps-2{
-    padding-left: variables.$spacer-2;
-}
-.pe-2{
-    padding-right: variables.$spacer-2;
-}
-
-.pt-3{
-    padding-top: variables.$spacer-3;
-}
-.pb-3{
-    padding-bottom: variables.$spacer-3;
-}
-.ps-3{
-    padding-left: variables.$spacer-3;
-}
-.pe-3{
-    padding-right: variables.$spacer-3;
-}
-
-.pt-4{
-    padding-top: variables.$spacer-4;
-}
-.pb-4{
-    padding-bottom: variables.$spacer-4;
-}
-.ps-4{
-    padding-left: variables.$spacer-4;
-}
-.pe-4{
-    padding-right: variables.$spacer-4;
-}
-
-.pt-5{
-    padding-top: variables.$spacer-5;
-}
-.pb-5{
-    padding-bottom: variables.$spacer-5;
-}
-.ps-5{
-    padding-left: variables.$spacer-5;
-}
-.pe-5{
-    padding-right: variables.$spacer-5;
+    .pt-#{$key}{
+        padding-top: $value;
+    }
+    .pb-#{$key}{
+        padding-bottom: $value;
+    }
+    .ps-#{$key}{
+        padding-left: $value;
+    }
+    .pe-#{$key}{
+        padding-right: $value;
+    }
 }
