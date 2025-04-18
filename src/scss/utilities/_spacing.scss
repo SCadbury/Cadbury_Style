@@ -1,0 +1,338 @@
+@use '../base/variables';
+/*Prefijos para mt, mb, ms, me pt, pb, ps, pe:
+t = top
+b = bottom
+s = start (left)
+e = end (right)
+Clases para los márgenes y paddings*/
+//Margins
+.m-0{
+    margin: variables.$spacer-0;
+}
+.m-1{
+    margin: variables.$spacer-1;
+}
+.m-2{
+    margin: variables.$spacer-2;
+}
+.m-3{
+    margin: variables.$spacer-3;
+}
+.m-4{
+    margin: variables.$spacer-4;
+}
+.m-5{
+    margin: variables.$spacer-5;
+}
+.m-6{
+    margin: variables.$spacer-6;
+}
+.m-7{
+    margin: variables.$spacer-7;
+}
+.m-8{
+    margin: variables.$spacer-8;
+}
+.m-9{
+    margin: variables.$spacer-9;
+}
+.m-10{
+    margin: variables.$spacer-10;
+}
+
+//Margins por niveles
+.mt-1{
+    margin-top: variables.$spacer-1;
+}
+.mb-1{
+    margin-bottom: variables.$spacer-1;
+}
+.ms-1{
+    margin-left: variables.$spacer-1;
+}
+.me-1{
+    margin-right: variables.$spacer-1;
+}
+
+.mt-2{
+    margin-top: variables.$spacer-2;
+}
+.mb-2{
+    margin-bottom: variables.$spacer-2;
+}
+.ms-2{
+    margin-left: variables.$spacer-2;
+}
+.me-2{
+    margin-right: variables.$spacer-2;
+}
+
+.mt-3{
+    margin-top: variables.$spacer-3;
+}
+.mb-3{
+    margin-bottom: variables.$spacer-3;
+}
+.ms-3{
+    margin-left: variables.$spacer-3;
+}
+.me-3{
+    margin-right: variables.$spacer-3;
+}
+
+.mt-4{
+    margin-top: variables.$spacer-4;
+}
+.mb-4{
+    margin-bottom: variables.$spacer-4;
+}
+.ms-4{
+    margin-left: variables.$spacer-4;
+}
+.me-4{
+    margin-right: variables.$spacer-4;
+}
+
+.mt-5{
+    margin-top: variables.$spacer-5;
+}
+.mb-5{
+    margin-bottom: variables.$spacer-5;
+}
+.ms-5{
+    margin-left: variables.$spacer-5;
+}
+.me-5{
+    margin-right: variables.$spacer-5;
+}
+
+.mt-6{
+    margin-top: variables.$spacer-6;
+}
+.mb-6{
+    margin-bottom: variables.$spacer-6;
+}
+.ms-6{
+    margin-left: variables.$spacer-6;
+}
+.me-6{
+    margin-right: variables.$spacer-6;
+}
+
+.mt-7{
+    margin-top: variables.$spacer-7;
+}
+.mb-7{
+    margin-bottom: variables.$spacer-7;
+}
+.ms-7{
+    margin-left: variables.$spacer-7;
+}
+.me-7{
+    margin-right: variables.$spacer-7;
+}
+
+.mt-8{
+    margin-top: variables.$spacer-8;
+}
+.mb-8{
+    margin-bottom: variables.$spacer-8;
+}
+.ms-8{
+    margin-left: variables.$spacer-8;
+}
+.me-8{
+    margin-right: variables.$spacer-8;
+}
+
+.mt-9{
+    margin-top: variables.$spacer-9;
+}
+.mb-9{
+    margin-bottom: variables.$spacer-9;
+}
+.ms-9{
+    margin-left: variables.$spacer-9;
+}
+.me-9{
+    margin-right: variables.$spacer-9;
+}
+
+.mt-10{
+    margin-top: variables.$spacer-10;
+}
+.mb-10{
+    margin-bottom: variables.$spacer-10;
+}
+.ms-10{
+    margin-left: variables.$spacer-10;
+}
+.me-10{
+    margin-right: variables.$spacer-10;
+}
+
+//Paddings
+.p-0{
+    padding: variables.$spacer-0;
+}
+.p-1{
+    padding: variables.$spacer-1;
+}
+.p-2{
+    padding: variables.$spacer-2;
+}
+.p-3{
+    padding: variables.$spacer-3;
+}
+.p-4{
+    padding: variables.$spacer-4;
+}
+.p-5{
+    padding: variables.$spacer-5;
+}
+.p-6{
+    padding: variables.$spacer-6;
+}
+.p-7{
+    padding: variables.$spacer-7;
+}
+.p-8{
+    padding: variables.$spacer-8;
+}
+.p-9{
+    padding: variables.$spacer-9;
+}
+.p-10{
+    padding: variables.$spacer-10;
+}
+
+//Paddings por niveles
+.pt-1{
+    padding-top: variables.$spacer-1;
+}
+.pb-1{
+    padding-bottom: variables.$spacer-1;
+}
+.ps-1{
+    padding-left: variables.$spacer-1;
+}
+.pe-1{
+    padding-right: variables.$spacer-1;
+}
+
+.pt-2{
+    padding-top: variables.$spacer-2;
+}
+.pb-2{
+    padding-bottom: variables.$spacer-2;
+}
+.ps-2{
+    padding-left: variables.$spacer-2;
+}
+.pe-2{
+    padding-right: variables.$spacer-2;
+}
+
+.pt-3{
+    padding-top: variables.$spacer-3;
+}
+.pb-3{
+    padding-bottom: variables.$spacer-3;
+}
+.ps-3{
+    padding-left: variables.$spacer-3;
+}
+.pe-3{
+    padding-right: variables.$spacer-3;
+}
+
+.pt-4{
+    padding-top: variables.$spacer-4;
+}
+.pb-4{
+    padding-bottom: variables.$spacer-4;
+}
+.ps-4{
+    padding-left: variables.$spacer-4;
+}
+.pe-4{
+    padding-right: variables.$spacer-4;
+}
+
+.pt-5{
+    padding-top: variables.$spacer-5;
+}
+.pb-5{
+    padding-bottom: variables.$spacer-5;
+}
+.ps-5{
+    padding-left: variables.$spacer-5;
+}
+.pe-5{
+    padding-right: variables.$spacer-5;
+}
+
+.pt-6{
+    padding-top: variables.$spacer-6;
+}
+.pb-6{
+    padding-bottom: variables.$spacer-6;
+}
+.ps-6{
+    padding-left: variables.$spacer-6;
+}
+.pe-6{
+    padding-right: variables.$spacer-6;
+}
+
+.pt-7{
+    padding-top: variables.$spacer-7;
+}
+.pb-7{
+    padding-bottom: variables.$spacer-7;
+}
+.ps-7{
+    padding-left: variables.$spacer-7;
+}
+.pe-7{
+    padding-right: variables.$spacer-7;
+}
+
+.pt-8{
+    padding-top: variables.$spacer-8;
+}
+.pb-8{
+    padding-bottom: variables.$spacer-8;
+}
+.ps-8{
+    padding-left: variables.$spacer-8;
+}
+.pe-8{
+    padding-right: variables.$spacer-8;
+}
+
+.pt-9{
+    padding-top: variables.$spacer-9;
+}
+.pb-9{
+    padding-bottom: variables.$spacer-9;
+}
+.ps-9{
+    padding-left: variables.$spacer-9;
+}
+.pe-9{
+    padding-right: variables.$spacer-9;
+}
+
+.pt-10{
+    padding-top: variables.$spacer-10;
+}
+.pb-10{
+    padding-bottom: variables.$spacer-10;
+}
+.ps-10{
+    padding-left: variables.$spacer-10;
+}
+.pe-10{
+    padding-right: variables.$spacer-10;
+}
