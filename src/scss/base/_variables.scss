@@ -42,19 +42,6 @@ $light-theme: (
   text-muted: #5d3b8c
 );
 
-/*Espaciados*/
-$spacer-0: 0px;
-$spacer-1: 5px;
-$spacer-2: 10px;
-$spacer-3: 15px;
-$spacer-4: 20px;
-$spacer-5: 25px;
-$spacer-6: 30px;
-$spacer-7: 35px;
-$spacer-8: 40px;
-$spacer-9: 45px;
-$spacer-10: 50px;
-
 // ========== Navbar ==========
 
 $navbar-bg:           $color-primary !default;
@@ -72,3 +59,18 @@ $breakpoint-xs: 480px !default;   // Teléfonos pequeños
 $breakpoint-sm: 768px !default;   // Teléfonos grandes / tablets
 $breakpoint-md: 992px !default;   // Laptops
 $breakpoint-lg: 1200px !default;  // Pantallas grandes
+
+//==== Colores para redondeo ====
+
+//colores para redondeo
+$color-1: #2a1452; // purpura oscuro
+$color-1-2: #381874; // purpura oscuro 2
+$color-2: #5d3b8c; // violeta
+$color-3: #d4af37; // dorado 
+$color-4: #1a0f30; // casi negro
+$color-5: #ffffff; // blanco  
+$color-6: #ff6347; // rojo claro
+$color-6-2:#b22222; // firebrick
+$color-7: #147c7c; // verde azulado
+$color-8: #ceba4d; // amarillo oscuro
+$color-9: #a16699; // rosa palido

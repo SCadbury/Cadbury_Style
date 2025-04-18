@@ -1,15 +1,6 @@
 //====INICIO DEL APARTADO DE COLORES DE FONDO=====
+@use '../base/variables' as vars;
 @use 'sass:color'; //importe del modulo de color
-
-//colores base para los fondos
-$color-1: #381874; // purpura oscuro
-$color-2: #5d3b8c; // violeta
-$color-3: #d4af37; // dorado
-$color-4: #1a0f30; // casi negro
-$color-5: #ff6347; // rojo claro
-$color-6: #147c7c; // verde azulado
-$color-7: #ceba4d; // amarillo oscuro
-$color-8: #a16699; // rosa palido
 
 //estilo base para los fondos
 %bg-box {
@@ -25,23 +16,23 @@ $color-8: #a16699; // rosa palido
 //fondos solidos (1 al 5)
 .bg-color-1 {
   @extend %bg-box;
-  background-color: $color-1;
+  background-color: vars.$color-1-2;
 }
 .bg-color-2 {
   @extend %bg-box;
-  background-color: $color-2;
+  background-color: vars.$color-2;
 }
 .bg-color-3 {
   @extend %bg-box;
-  background-color: $color-3;
+  background-color: vars.$color-3;
 }
 .bg-color-4 {
   @extend %bg-box;
-  background-color: $color-4;
+  background-color: vars.$color-4;
 }
 .bg-color-5 {
   @extend %bg-box;
-  background-color: $color-5;
+  background-color: vars.$color-6;
 }
 
 //fondos gradientes (6 al 8)
@@ -49,27 +40,27 @@ $color-8: #a16699; // rosa palido
   @extend %bg-box;
   background-image: linear-gradient(
     135deg,
-    $color-6,
-    color.scale($color-6, $lightness: 15%),
-    color.scale($color-6, $lightness: -15%)
+    vars.$color-7,
+    color.scale(vars.$color-7, $lightness: 15%),
+    color.scale(vars.$color-7, $lightness: -15%)
   );
 }
 .bg-color-7-grad {
   @extend %bg-box;
   background-image: linear-gradient(
     135deg,
-    $color-7,
-    color.scale($color-7, $lightness: 15%),
-    color.scale($color-7, $lightness: -15%)
+    vars.$color-8,
+    color.scale(vars.$color-8, $lightness: 15%),
+    color.scale(vars.$color-8, $lightness: -15%)
   );
 }
 .bg-color-8-grad {
   @extend %bg-box;
   background-image: linear-gradient(
     135deg,
-    $color-8,
-    color.scale($color-8, $lightness: 15%),
-    color.scale($color-8, $lightness: -15%)
+    vars.$color-9,
+    color.scale(vars.$color-9, $lightness: 15%),
+    color.scale(vars.$color-9, $lightness: -15%)
   );
 }
 //====FIN DEL APARTADO DE COLORES DE FONDO=====
