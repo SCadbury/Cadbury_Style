@@ -79,3 +79,22 @@
 .text-color-danger{
   color: typography.$text-color-danger;
 }
+
+@mixin modo($tema){
+  @if $tema == 'light'{
+    background: map-get(vars.$light-theme, background) !important;
+    color: map-get(vars.$light-theme, text-color);
+    border-color: map-get(vars.$light-theme, border-color);
+  }@else{
+    background: map-get(vars.$dark-theme, background) !important;
+    color: map-get(vars.$dark-theme, text-color);
+    border-color: map-get(vars.$dark-theme, border-color);
+  }
+}
+
+html.theme-light{
+  @include modo('light');
+}
+html.theme-dark{
+  @include modo('dark');
+}
