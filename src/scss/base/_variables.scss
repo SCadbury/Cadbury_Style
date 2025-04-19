@@ -40,7 +40,7 @@ $dark-theme: (
 
 /* Modo Claro */
 $light-theme: (
-  background:  $color-white,
+  background:  linear-gradient(90deg, rgba(93, 59, 140, 0.25) 0%, rgba(212, 175, 55, 0.1) 100%),
   card-bg:     #f7f5fb,
   border-color:$color-primary,
   text-color:  $color-primary-dark,
