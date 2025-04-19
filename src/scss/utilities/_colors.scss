@@ -98,3 +98,7 @@ html.theme-light{
 html.theme-dark{
   @include modo('dark');
 }
+
+html.theme-light, html.theme-dark{
+  transition: background 0.4s ease, color 0.4s ease;
+}
