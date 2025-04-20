@@ -1,24 +1,21 @@
+/* _documentation.scss */
+
 @use '../base/variables' as v;
 @use '../base/typography' as t;
 @use '../utilities/position' as p;
 
-//sass src/scss/main.scss dist/css/mi-libreria.css
-
 .docs-layout {
     display: flex;
     min-height: 100vh;
-    background: v.$color-primary;  
   }
   
   .sidebar {
-    width: 250px;
+    width: 600px;
     background-color: v.$color-primary-dark;  
-//    padding: 1.5rem;
     position: sticky;
     top: 60px;  
     height: calc(100vh - 60px);  
-    overflow-y: auto;
-  
+    overflow-y: scroll;  
     nav ul {
       list-style: none;
       padding: 0;
@@ -33,7 +30,6 @@
           text-align: center;
           display: block;
           padding: 0.5rem 0;
-          border-radius: 4px;
           transition: background 0.3s, color 0.3s;
   
           &:hover {
@@ -48,8 +44,7 @@
   .main-content {
     flex-grow: 1;
     padding: 2rem;
-    color: #ecf0f1;  // Color de texto (ejemplo claro)
-  
+
     h1, h2 {
       margin-bottom: 1rem;
     }
