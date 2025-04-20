@@ -31,7 +31,7 @@ $overlay-bg: rgba(42, 20, 82, 0.8);
 /* ========== Paletas por modo ========== */
 /* Modo Oscuro */
 $dark-theme: (
-  background:  linear-gradient(135deg, $color-primary-deep-dark, $color-primary-dark, $color-brown),
+  background:  linear-gradient(180deg, $color-primary-deep-dark, $color-primary-dark, $color-brown),
   card-bg:     rgba(58, 38, 103, 0.9),
   border-color:$color-primary,
   text-color:  $color-white,
@@ -40,7 +40,7 @@ $dark-theme: (
 
 /* Modo Claro */
 $light-theme: (
-  background:  $color-white,
+  background:  linear-gradient(90deg, rgba(93, 59, 140, 0.25) 0%, rgba(212, 175, 55, 0.1) 100%),
   card-bg:     #f7f5fb,
   border-color:$color-primary,
   text-color:  $color-primary-dark,

@@ -4,20 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CadburyStyle</title>
-    <link rel="stylesheet" href="../dist/css/mi-libreria.css">
+    <script>
+        //Aplicando primero el tema guardado antes de recargar la página
+        const guardarTema = localStorage.getItem('tema') || 'theme-dark'; //Tema oscuro por defecto
+        document.documentElement.className = guardarTema;
+    </script>
+    <link rel="stylesheet" href="../dist/css/CadburyStyle.css">
 </head>
-<body class="bg-color-1">
+<body>
     <nav class="navbar navbar-deep">
         <div class="navbar-logo">CadburyStyle</div>
         <div class="navbar-links">
           <a href="#inicio">Inicio</a>
           <a href="/docs/doc.html">Documentación</a>
           <a href="/docs/examples.html">Ejemplos</a>
-          <button class="theme-toggle-btn">🌙</button>
+          <button class="theme-toggle-btn">☀️</button>
         </div>
     </nav>
     <section>
-        <h1 class="">Bienvenido a nuestra librería</h1>
+        <div class="container d-flex justify-center align-center flex-direction-c">
+            <img src="../docs/img/logo-dorado.png" alt="" width="auto" height="100px">
+            <h1 class="fs-50 font-primary">Crea tu sitio web al estilo Cadbury</h1>
+        </div>
+        <div class="container d-flex justify-center align-center">
+            <h1 class="fs-40">Documentación</h1>
+        </div>
+        <div class="container d-flex justify-center align-center">
+            <h1 class="fs-40">Instalación</h1>
+        </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const themeToggleBtn = document.querySelector('.theme-toggle-btn');
+            const body = document.documentElement;
+
+            //Cambiar icono y cargar tema guardado
+            const guardarTema = localStorage.getItem('tema');
+            cambiarIcono(guardarTema || 'theme-light');
+
+            //Cambiar y guardar tema
+            themeToggleBtn.addEventListener('click', function(){
+                if (body.classList.contains('theme-light')) {
+                    body.classList.remove('theme-light');
+                    body.classList.add('theme-dark');
+                    localStorage.setItem('tema', 'theme-dark');
+                    cambiarIcono('theme-dark');
+                }else{
+                    body.classList.remove('theme-dark');
+                    body.classList.add('theme-light');
+                    localStorage.setItem('tema', 'theme-light');
+                    cambiarIcono('theme-light');
+                }
+            });
+
+            function cambiarIcono(tema){
+                if (tema === 'theme-light') {
+                    themeToggleBtn.textContent = '🌙';   
+                }else{
+                    themeToggleBtn.textContent = '☀️';
+                }
+            }
+        });
+    </script>
 </body>
 </html>
