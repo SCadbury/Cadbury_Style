@@ -1,0 +1,52 @@
+/* _documentation.scss */
+
+@use '../base/variables' as v;
+@use '../base/typography' as t;
+@use '../utilities/position' as p;
+
+.docs-layout {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 600px;
+    background-color: v.$color-primary-dark;  
+    position: sticky;
+    top: 60px;  
+    height: calc(100vh - 60px);  
+    overflow-y: scroll;  
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        margin-bottom: 1rem;
+  
+        a {
+          color: v.$color-white; 
+          text-decoration: none;
+          text-align: center;
+          display: block;
+          padding: 0.5rem 0;
+          transition: background 0.3s, color 0.3s;
+  
+          &:hover {
+            background-color: v.$color-primary;  // Color de fondo en hover (ejemplo de color morado)
+            color: v.$color-accent-gold;  // Color dorado para el texto en hover
+          }
+        }
+      }
+    }
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 2rem;
+
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+  }
+  
