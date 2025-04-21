@@ -88,7 +88,7 @@
     text-transform: uppercase;
   }
   
-  /*Colores de la sintaxis */
+  /*Colores de la sintaxis para container de código*/
   .container-code .comment {
     color: #6a9955;
     font-style: italic;
@@ -108,5 +108,39 @@
   
   .container-code .number {
     color: #b5cea8;
+  }
+  
+  .container-personalizable {
+    display: block;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  
+    @media (min-width: $breakpoint-xs) {
+      max-width: 480px;
+    }
+    @media (min-width: $breakpoint-sm) {
+      max-width: 768px;
+    }
+    @media (min-width: $breakpoint-md) {
+      max-width: 1200px;
+    }
+    @media (min-width: $breakpoint-lg) {
+      max-width: 1400px;
+    }
+  
+    // Clase de utilidad opcional para activar centrado de contenido
+    &.is-centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    // Clase de utilidad opcional para activar separación
+    &.has-spacing {
+      padding-block: 2rem;
+    }
   }
   
