@@ -1,0 +1,63 @@
+/* _documentation.scss */
+
+@use '../base/variables' as v;
+@use '../base/typography' as t;
+@use '../utilities/position' as p;
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.docs-layout {
+  display: flex;
+  flex: 1;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 60px;
+    height: calc(100vh - 60px);
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 60px); /* Mantiene siempre la misma altura visible */
+    overflow-y: auto; /* Desplaza solo su contenido */
+    background-color: v.$color-primary-dark; 
+    
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        margin-bottom: 1rem;
+  
+        a {
+          color: v.$color-white; 
+          text-decoration: none;
+          text-align: center;
+          display: block;
+          padding: 0.5rem 0;
+          transition: background 0.3s, color 0.3s;
+  
+          &:hover {
+            background-color: v.$color-primary;  // Color de fondo en hover (ejemplo de color morado)
+            color: v.$color-accent-gold;  // Color dorado para el texto en hover
+          }
+        }
+      }
+    }
+  }
+  
+  .main-content {
+    margin-left: 250px;  /* espacio para el sidebar fijo */
+    padding: 2rem;
+    overflow-y: auto;
+
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+  }
+  

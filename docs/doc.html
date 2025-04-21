@@ -1,24 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabdury Style</title>
-    <link rel="stylesheet" href="../dist/css/CadburyStyle.css">
+    <title>CadburyStyle</title>
+    <script>
+      // Aplicando primero el tema guardado antes de que cargue el CSS
+      const temaGuardado = localStorage.getItem('tema') || 'theme-dark'; // Oscuro por defecto
+      document.documentElement.classList.add(temaGuardado);
+    </script>
+    <link rel="stylesheet" href="CadburyStyle.css">
 </head>
 <body>
-  <nav class="navbar navbar-deep">
-    <div class="navbar-logo">CadburyStyle</div>
-  
-    <input  type="checkbox" id="nav-toggle" class="navbar-checkbox">
-    <label for="nav-toggle" class="navbar-toggle  ">|||</label>
-  
-    <div class="navbar-links">
-      <a href="#inicio">Inicio</a>
-      <a href="#docs">Docs</a>
-      <a href="#ejemplos">Ejemplos</a>
-      <button class="theme-toggle-btn">🌙</button>
+    <nav class="navbar navbar-deep">
+        <div class="navbar-logo">CadburyStyle</div>
+        <div class="navbar-links">
+            <a href="#inicio">Inicio</a>
+            <a href="/docs/doc.html">Documentación</a>
+            <a href="/docs/examples.html">Ejemplos</a>
+            <button class="theme-toggle-btn" aria-label="Cambiar tema">🌙</button>
+        </div>
+    </nav>
+
+    <div class="docs-layout">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Introducción</a></li>
+                    <li><a href="#botones">Botones</a></li>
+                    <li><a href="#contenidos">Contenidos</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                    <li><a href="#accesibilidad">Accesibilidad</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+          <div class="container-section">
+              <section id="inicio">
+                  <h1 class="fs-40 text-center fw-bold">Este es el comienzo de tu aventura con CadburyStyle!</h1>
+                  <h2 class="fs-20 text-center">Aquí encontrarás la Documentación necesaria para comenzar tu proyecto hoy!</h2>
+                  <div style="text-align: center;">
+                      <img src="../docs/img/Hombre_ComiendoChocolate.png" alt="" width="auto" height="300px" style="border-radius: 25px;">
+                  </div>
+                  <br>
+                  <p class="text-center fw-bold">Tu librería elegante para interfaces dulces y profesionales. Inspirada en la sobriedad del chocolate y la elegancia del morado Cadbury.</p>
+                  <br>
+                  <p class="text-justify">Dale un toque delicioso a tus proyectos web con esta exclusiva colección de componentes inspirados en el inconfundible sabor y calidad del chocolate Cadbury. Con una paleta de colores basada en tonos morados profundos, ricos chocolates y acentos dorados, nuestra librería ofrece una experiencia visual tan irresistible como el propio dulce.</p>
+                  <p class="text-justify">Desde botones suaves como un trozo de chocolate hasta tarjetas elegantes que reflejan la suavidad y el lujo de Cadbury, cada elemento ha sido diseñado para añadir ese toque de indulgencia a tu sitio. Los formularios emulan la cremosidad y textura perfecta, mientras que las alertas dinámicas te ofrecen una experiencia interactiva que resalta con el brillo de un chocolate premium.</p>
+                  <p class="text-justify">Nuestra barra de navegación fluye con la misma suavidad que una barra de Cadbury, guiando a tus usuarios de manera sencilla y elegante por tu web. Además, los distintivos (badges) te permiten resaltar los momentos más dulces y especiales de tu plataforma, al igual que el empaque dorado que identifica a Cadbury.</p>
+                  <p class="text-justify">Con contenedores diseñados para mejorar la experiencia de usuario y una cobertura completa de CSS y HTML, la librería <strong>Cadbury Style</strong> es la elección perfecta para que tu sitio web tenga la misma dulzura y calidad que el mejor chocolate.</p>
+                  <br>
+                  <p class="text-justify fs-20 fw-bold">Explora lo siguiente en nuestra librería Cadbury Style:</p>
+                  <ul class="text-justify">
+                      <li><strong>Botones</strong>: Elegantes, suaves y de colores deliciosos para una interacción suave.</li>
+                      <li><strong>Tarjetas</strong>: Ricas en detalles y con un estilo sofisticado que recuerda la textura del chocolate.</li>
+                      <li><strong>Formularios</strong>: Diseñados para ser tan agradables como un trozo de chocolate en tu boca.</li>
+                      <li><strong>Alertas</strong>: Notificaciones sutiles y atractivas, al estilo Cadbury.</li>
+                      <li><strong>Badges</strong>: Distintivos que destacan logros y momentos especiales con un toque dorado.</li>
+                  </ul>
+                  <p class="text-justify">Haz que tus proyectos web sean tan irresistibles como el chocolate Cadbury con nuestra librería <strong>Cadbury Style</strong>. ¡Atrévete a hacerlos únicos y deliciosos!</p>
+                  <br>
+              </section>
+          </div>
+      
+          <div class="container-section container-outline">
+              <section id="botones">
+                  <h2 class="fs-30 fw-bold">Botones</h2>
+                  <p>CadburyStyle contiene una gran variedad de botones prediseñados y la oportunidad de personalizar el tuyo.</p>
+                  <br>
+                  <div class="container-code">
+                    Aqui va el codigo
+                </div>
+              </section>
+          </div>  
+          <div class="container-section container-outline mb-1">
+              <section id="contenidos">
+                  <h2 class="fs-30 fw-bold">Alertas</h2>
+                  <p>Explora 4 tipos de alertas de diferentes tipo: éxito, información, aviso, error.</p>
+                  <br>
+                  <div class="container-code">
+                    Aqui va el codigo
+                </div>
+              </section>
+          </div>
+          <div class="container-section">
+              <section id="javascript">
+                  <h2>JavaScript</h2>
+                  <p>Incluye scripts ligeros para interacción y personalización dinámica.</p>
+              </section>
+          </div>
+      
+          <div class="container-section">
+              <section id="accesibilidad">
+                  <h2>Accesibilidad</h2>
+                  <p>Construido con buenas prácticas para que todos disfruten tu producto, sin importar sus capacidades.</p>
+              </section>
+          </div>
+      </main>
+      
     </div>
-  </nav>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const themeToggleBtn = document.querySelector('.theme-toggle-btn');
+          const root = document.documentElement;
+
+          // Establecer icono correcto según tema
+          const temaActual = root.classList.contains('theme-light') ? 'theme-light' : 'theme-dark';
+          actualizarIcono(temaActual);
+
+          themeToggleBtn.addEventListener('click', function() {
+              if (root.classList.contains('theme-light')) {
+                  root.classList.replace('theme-light', 'theme-dark');
+                  localStorage.setItem('tema', 'theme-dark');
+                  actualizarIcono('theme-dark');
+              } else {
+                  root.classList.replace('theme-dark', 'theme-light');
+                  localStorage.setItem('tema', 'theme-light');
+                  actualizarIcono('theme-light');
+              }
+          });
+
+          function actualizarIcono(tema) {
+              themeToggleBtn.textContent = (tema === 'theme-light') ? '🌙' : '☀️';
+          }
+      });
+    </script>
 </body>
 </html>
