@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CadburyStyle</title>
     <script>
-      // Aplicando primero el tema guardado antes de que cargue el CSS
-      const temaGuardado = localStorage.getItem('tema') || 'theme-dark'; // Oscuro por defecto
+      const temaGuardado = localStorage.getItem('tema') || 'theme-dark'; 
       document.documentElement.classList.add(temaGuardado);
     </script>
     <link rel="stylesheet" href="CadburyStyle.css">
@@ -23,22 +22,33 @@
     </nav>
 
     <div class="docs-layout">
-        <aside class="sidebar">
+        <aside class="sidebar sidebar-fixed">
+            <div class="mt-2 mb-2">
+                <h2 class="text-color-accent-gold fs-20 text-center fw-bold">Menú de Navegación</h2>
+            </div>
             <nav>
-                <ul>
-                    <li><a href="#inicio">Introducción</a></li>
-                    <li><a href="#botones">Botones</a></li>
-                    <li><a href="#contenidos">Contenidos</a></li>
-                    <li><a href="#javascript">JavaScript</a></li>
-                    <li><a href="#accesibilidad">Accesibilidad</a></li>
-                </ul>
+                <div class="nav-section">
+                    <h2 class="text-color-accent-gold fs-14 text-center fw-bold mt-1 mb-1">General</h2>
+                    <ul>
+                        <li><a href="#inicio">Introducción</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h2 class="text-color-accent-gold fs-14 text-center fw-bold mt-1 mb-1">Componentes</h3>
+                    <ul>
+                        <li><a href="#botones">Botones</a></li>
+                        <li><a href="#alertas">Alertas</a></li>
+                        <li><a href="#badges">Badges</a></li>
+                        <li><a href="#cards">Cards</a></li>
+                    </ul>
+                </div>
             </nav>
         </aside>
 
         <main class="main-content">
           <div class="container-section">
               <section id="inicio">
-                  <h1 class="fs-40 text-center fw-bold">Este es el comienzo de tu aventura con CadburyStyle!</h1>
+                  <h1 class="ff-primary fs-40 text-center fw-bold">Este es el comienzo de tu aventura con CadburyStyle!</h1>
                   <h2 class="fs-20 text-center">Aquí encontrarás la Documentación necesaria para comenzar tu proyecto hoy!</h2>
                   <div style="text-align: center;">
                       <img src="../docs/img/Hombre_ComiendoChocolate.png" alt="" width="auto" height="300px" style="border-radius: 25px;">
@@ -63,19 +73,52 @@
                   <br>
               </section>
           </div>
-      
-          <div class="container-section container-outline">
+        <!-- Botones con fondo -->
+          <div class="container-section container-outline mb-5">
               <section id="botones">
                   <h2 class="fs-30 fw-bold">Botones</h2>
-                  <p>CadburyStyle contiene una gran variedad de botones prediseñados y la oportunidad de personalizar el tuyo.</p>
+                  <p class="font-secondary">CadburyStyle contiene una gran variedad de botones prediseñados y la oportunidad de personalizar el tuyo.</p>
                   <br>
+                  <div class="text-center mb-2">
+                    <button class="ds-btn ds-btn-primary">Botón Primario</button>
+                    <button class="ds-btn ds-btn-secondary">Botón Secundario</button>
+                    <button class="ds-btn ds-btn ds-btn-accent">Botón de Acento</button>
+                    <button class="ds-btn ds-btn ds-btn-light">Botón Claro</button>
+                    <button class="ds-btn ds-btn-brown">Botón Marrón</button>
+                    <br><br>
+                    <button class="ds-btn ds-btn-sm text-color-primary">Botón Pequeño</button>
+                    <button class="ds-btn ds-btn-md text-color-primary">Botón Medio</button>
+                    <button class="ds-btn ds-btn-lg text-color-primary">Botón Grande</button>
+                    <br><br>
+                    <button class="ds-btn ds-btn-dash-lilac bg-color-3">Botón Dash Lilac</button>
+                    <button class="ds-btn ds-btn-dash-gold bg-color-2">Botón Dash Gold</button>
+                    <button class="ds-btn ds-btn-dash-dark bg-color-3">Botón Dash Dark</button>
+                    <br><br>
+                    <button class="ds-btn ds-btn-square-lilac bg-color-7-grad">Botón Cuadrado Lilac</button>
+                    <button class="ds-btn ds-btn-square-gold">Botón Cuadrado Gold</button>
+                    <button class="ds-btn ds-btn-square-dark bg-color-8-grad">Botón Cuadrado Dark</button>
+                  </div>
                   <div class="container-code">
-                    Aqui va el codigo
-                </div>
+                    <span class="comment">&lt;!-- Ejemplos de uso --&gt;</span><br>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-primary"</span><span class="variable">></span>Botón Primario<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-secondary"</span><span class="variable">></span>Botón Secundario<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn ds-btn-accent"</span><span class="variable">></span>Botón de Acento<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn ds-btn-light"</span><span class="variable">></span>Botón Claro<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-brown"</span><span class="variable">></span>Botón Marrón<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-sm text-color-primary"</span><span class="variable">></span>Botón Pequeño<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-md text-color-primary"</span><span class="variable">></span>Botón Medio<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-lg text-color-primary"</span><span class="variable">></span>Botón Grande<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-dash-lilac bg-color-3"</span><span class="variable">></span>Botón Dash Lilac<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-dash-gold bg-color-2"</span><span class="variable">></span>Botón Dash Gold<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-dash-dark bg-color-3"</span><span class="variable">></span>Botón Dash Dark<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-square-lilac bg-color-7-grad"</span><span class="variable">></span>Botón Cuadrado Lilac<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-square-gold"</span><span class="variable">></span>Botón Cuadrado Gold<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-square-dark bg-color-8-grad"</span><span class="variable">></span>Botón Cuadrado Dark<span class="variable"><</span>/button<span class="variable">></span>
+                  </div>                  
               </section>
           </div>  
-          <div class="container-section container-outline mb-1">
-              <section id="contenidos">
+          <div class="container-section container-outline mb-5">
+              <section id="alertas">
                   <h2 class="fs-30 fw-bold">Alertas</h2>
                   <p>Explora 4 tipos de alertas de diferentes tipo: éxito, información, aviso, error.</p>
                   <br>
@@ -84,16 +127,16 @@
                 </div>
               </section>
           </div>
-          <div class="container-section">
-              <section id="javascript">
-                  <h2>JavaScript</h2>
+          <div class="container-section container-outline mb-5">
+              <section id="badges">
+                  <h2>badges</h2>
                   <p>Incluye scripts ligeros para interacción y personalización dinámica.</p>
               </section>
           </div>
       
-          <div class="container-section">
-              <section id="accesibilidad">
-                  <h2>Accesibilidad</h2>
+          <div class="container-section container-outline mb-5">
+              <section id="cards">
+                  <h2>cards</h2>
                   <p>Construido con buenas prácticas para que todos disfruten tu producto, sin importar sus capacidades.</p>
               </section>
           </div>
