@@ -1,9 +1,11 @@
 @use '../base/variables';
+@use '../base/fonts';
+
 /* _typography.scss */
 
 /* Tipografías */
-$font-primary: 'Cormorant Garamond', serif;  // Elegante para títulos
-$font-secondary: 'Lato', sans-serif;         // Clara y legible para texto base
+$font-primary: 'Cormorant Garamond', serif;  
+$font-secondary: 'Lato', sans-serif;         
 
 /* Tamaños de fuentes */
 $font-size-10: 10px;
@@ -45,6 +47,16 @@ $text-color-success: variables.$alert-success;
 $text-color-info: variables.$alert-info;
 $text-color-warning: variables.$alert-warning;
 $text-color-danger: variables.$alert-danger;
+
+/* Fuentes */
+
+.ff-1{
+    font-family: $font-primary;
+}
+
+.ff-2{
+    font-family: $font-secondary;
+}
 
 /*Clases para los tamaños del texto*/
 .fs-10{
