@@ -1,7 +1,7 @@
 @use '../base/variables';
-/* _typography.scss */
+@use '../base/fonts';
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lato:wght@400;700&display=swap');
+/* _typography.scss */
 
 /* Tipografías */
 $font-primary: 'Cormorant Garamond', serif;  
@@ -135,14 +135,4 @@ $text-color-danger: variables.$alert-danger;
 }
 .fw-bold{
     font-weight: $font-weight-bold;
-}
-
-/* Tipografia */
-
-.ff-primary{
-    font-family: $font-primary;
-}
-
-.ff-secondary{
-    font-family: $font-secondary;
 }
