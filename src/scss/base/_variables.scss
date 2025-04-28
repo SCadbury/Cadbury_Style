@@ -35,7 +35,7 @@ $dark-theme: (
   card-bg:     rgba(58, 38, 103, 0.9),
   border-color:$color-primary,
   text-color:  $color-white,
-  text-muted:  #a29eb6
+  text-muted:  #a29eb6,
 );
 
 /* Modo Claro */
@@ -44,9 +44,34 @@ $light-theme: (
   card-bg:     #f7f5fb,
   border-color:$color-primary,
   text-color:  $color-primary-dark,
-  text-muted:  #5d3b8c
+  text-muted:  #5d3b8c,
 );
 
+/* Encabezados en modo oscuro */
+.theme-dark h1 {
+  color: $color-accent-gold;
+}
+
+.theme-dark h2 {
+  color: $color-white;
+}
+
+.theme-dark h3 {
+  color: $color-light-red;
+}
+
+/* Encabezados en modo claro */
+.theme-light h1 {
+  color: $color-primary-deep-dark;
+}
+
+.theme-light h2 {
+  color: $color-primary-dark;
+}
+
+.theme-light h3 {
+  color: $color-primary-dark;
+}
 /* ========== Navbar ========== */
 $navbar-bg:           $color-primary !default;
 $navbar-text:         $color-white   !default;
