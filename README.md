@@ -26,18 +26,19 @@
     <li>🌙 Soporte para modo oscuro (próximamente).</li>
   </ul>
 
-  <h2>🚀 ¿Cómo usar Cadbury Style?</h2>
-  <p>Simplemente incluye el archivo CSS en tu HTML:</p>
+<h2>🚀 ¿Cómo usar Cadbury Style?</h2>
+<p>Simplemente incluye el archivo CSS y el script en tu HTML:</p>
 
-  <pre><code>&lt;link rel="stylesheet" href="https://cdn.tu-sitio.com/cadbury-style.min.css"&gt;</code></pre>
+<pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Scadbury/Cadbury_Style@main/docs/CadburyStyle.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/Scadbury/Cadbury_Style@main/docs/script.js"&gt;&lt;/script&gt;</code></pre>
 
-  <p>¡Y listo! Ya puedes empezar a utilizar nuestras clases personalizadas en tus elementos HTML.</p>
+<p>¡Y listo! Ya puedes empezar a utilizar nuestras clases personalizadas y comportamientos interactivos en tus elementos HTML.</p>
 
-  <h3>📌 Ejemplo básico:</h3>
+<h3>📌 Ejemplo básico:</h3>
 
-  <pre><code>&lt;button class="btn-cadbury"&gt;Haz clic aquí&lt;/button&gt;</code></pre>
+<pre><code>&lt;button class="btn-cadbury"&gt;Haz clic aquí&lt;/button&gt;</code></pre>
 
-  <p>Este botón usará un estilo característico de Cadbury Style: elegante, suave y delicioso visualmente.</p>
+<p>Este botón usará un estilo característico de Cadbury Style: elegante, suave y delicioso visualmente.</p>
 
   <h2>🆕 Novedades (v1.0.0)</h2>
   <ul>
@@ -56,9 +57,12 @@
   <p>
     Cadbury Style está disponible bajo la licencia MIT. Eres libre de usarla, modificarla y distribuirla incluso en proyectos comerciales.
   </p>
-
-  <h2>📫 Contacto</h2>
-  <p>¿Dudas o ideas? Síguenos en <a href="https://github.com/tuusuario/cadbury-style" target="_blank">GitHub</a>.</p>
-
+  <h2>👨‍💻 Desarrolladores</h2>
+  <ul>
+    <li>Pedro David Ramos García</li>
+    <li>Walter Bryan Romero Hernández</li>
+    <li>Josué Ivan Molina</li>
+    <li>Cesar Zuleta</li>
+  </ul>
 </body>
 </html>
