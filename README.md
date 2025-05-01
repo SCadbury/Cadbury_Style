@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cadbury Style 🍫</title>
-  <link rel="stylesheet" href="cadbury-style.min.css"> <!-- Enlaza tu archivo CSS real aquí -->
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8f8f8;
-      color: #3a2e2e;
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #4B0082;
-    }
-    code {
-      background: #eee;
-      padding: 0.2rem 0.4rem;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-    pre {
-      background: #f4f4f4;
-      padding: 1rem;
-      border-radius: 8px;
-      overflow-x: auto;
-    }
-    a {
-      color: #6a1b9a;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+
 
   <h1 align="center">¡Bienvenido al repositorio de Cadbury Style! 🍫</h1>
 
