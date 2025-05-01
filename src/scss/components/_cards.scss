@@ -80,6 +80,8 @@
     object-fit: cover;
     object-position: center;
     border-radius: r.$global-radius r.$global-radius 0 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card2__contenido {
@@ -193,6 +195,8 @@
   display: block;
   border-radius: r.$global-radius;
   transition: transform 400ms ease;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card_4 .intro {

@@ -1,0 +1,107 @@
+@use '../base/typography' as *;
+@use '../base/variables' as *;
+@use '../utilities/colors' as *;
+
+/* Layout general */
+.page-layout {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  font-family: $font-secondary;
+  position: sticky;
+  top: 80px;
+  align-self: start;
+  width: 240px;
+  background-color: #2c124d;
+  color: $text-color-white;
+  padding: 1rem;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100vh - 80px);
+  scrollbar-width: thin;
+  scrollbar-color: #6a2c8c transparent;
+
+  /* Tablets */
+  @media (max-width: 1024px) {
+    position: relative;
+    width: 100%;
+    max-height: none;
+    top: 0;
+  }
+
+  /* Móviles */
+  @media (max-width: 768px) {
+    padding: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Hover expandible solo en escritorio grande */
+@media (min-width: 1025px) {
+  .sidebar:hover {
+    width: 270px;
+  }
+}
+
+/* Enlaces */
+.sidebar a {
+  display: block;
+  padding: 10px 0;
+  color: $color-white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #6a2c8c;
+  padding-left: 20px;
+}
+
+.sidebar h1,
+.sidebar h2 {
+  font-family: $font-primary;
+  color: $color-accent-gold;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;
+  overflow-x: hidden;
+  box-sizing: border-box; 
+  padding: 2rem;
+  padding-bottom: 8rem; // deja espacio para el footer
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+
+  .main-content > * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 1024px) {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
+}
