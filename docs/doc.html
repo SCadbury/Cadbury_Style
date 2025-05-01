@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CadburyStyle - Docs </title>
-    <script>
-      const temaGuardado = localStorage.getItem('tema') || 'theme-dark'; 
-      document.documentElement.classList.add(temaGuardado);
-    </script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="CadburyStyle.css">
 </head>
 <body class="pd-0 m-0">
@@ -1004,32 +1001,5 @@
           &copy; 2025 CadburyStyle. Todos los derechos reservados.
         </div>
       </footer>
-    
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          const themeToggleBtn = document.querySelector('.theme-toggle-btn');
-          const root = document.documentElement;
-
-          // Establecer icono correcto según tema
-          const temaActual = root.classList.contains('theme-light') ? 'theme-light' : 'theme-dark';
-          actualizarIcono(temaActual);
-
-          themeToggleBtn.addEventListener('click', function() {
-              if (root.classList.contains('theme-light')) {
-                  root.classList.replace('theme-light', 'theme-dark');
-                  localStorage.setItem('tema', 'theme-dark');
-                  actualizarIcono('theme-dark');
-              } else {
-                  root.classList.replace('theme-dark', 'theme-light');
-                  localStorage.setItem('tema', 'theme-light');
-                  actualizarIcono('theme-light');
-              }
-          });
-
-          function actualizarIcono(tema) {
-              themeToggleBtn.textContent = (tema === 'theme-light') ? '🌙' : '☀️';
-          }
-      });
-    </script> 
 </body>
 </html>
