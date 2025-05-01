@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabdury Style</title>
-    <script>
-        //Aplicando primero el tema guardado antes de recargar la página
-        const guardarTema = localStorage.getItem('tema') || 'theme-dark'; //Tema oscuro por defecto
-        document.documentElement.className = guardarTema;
-    </script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="CadburyStyle.css">
 </head>
 <body>
@@ -21,12 +17,12 @@
     <div class="navbar-links">
       <a href="/docs/home.html">Inicio</a>
       <a href="/docs/doc.html">Docs</a>
-      <a href="/docs/examples.html">Ejemplos</a>
+      <a href="/docs/install.html">Instalacion</a>
       <button class="theme-toggle-btn">🌙</button>
     </div>
   </nav>
 
-  <div class="docs-layout">
+  <div class="page-layout">
     <aside class="sidebar">
         <nav>
             <ul>
@@ -37,7 +33,6 @@
             </ul>
         </nav>
     </aside>
-
     <main class="main-content">
       <div class="container">
         <section id="inicio">
@@ -150,17 +145,17 @@
     <div class="column">
       <h4>Recursos</h4>
       <ul>
-        <li><a href="#">Documentación</a></li>
-        <li><a href="#">Guías</a></li>
-        <li><a href="#">Tutoriales</a></li>
+        <li><a href="/docs/doc.html">Documentación</a></li>
+        <li><a href="/docs/doc.html">Guías</a></li>
+        <li><a href="/docs/install.html">Tutoriales</a></li>
       </ul>
     </div>
   
     <div class="column">
       <h4>Cadbury Style</h4>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Ejemplos</a></li>
+        <li><a href="/docs/home.html">Inicio</a></li>
+        <li><a href="/docs/doc.html">Ejemplos</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
     </div>
@@ -171,39 +166,5 @@
       &copy; 2025 CadburyStyle. Todos los derechos reservados.
     </div>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-        const themeToggleBtn = document.querySelector('.theme-toggle-btn');
-        const body = document.documentElement;
-
-        //Cambiar icono y cargar tema guardado
-        const guardarTema = localStorage.getItem('tema');
-        cambiarIcono(guardarTema || 'theme-light');
-
-        //Cambiar y guardar tema
-        themeToggleBtn.addEventListener('click', function(){
-            if (body.classList.contains('theme-light')) {
-                body.classList.remove('theme-light');
-                body.classList.add('theme-dark');
-                localStorage.setItem('tema', 'theme-dark');
-                cambiarIcono('theme-dark');
-            }else{
-                body.classList.remove('theme-dark');
-                body.classList.add('theme-light');
-                localStorage.setItem('tema', 'theme-light');
-                cambiarIcono('theme-light');
-            }
-        });
-
-        function cambiarIcono(tema){
-            if (tema === 'theme-light') {
-                themeToggleBtn.textContent = '🌙';   
-            }else{
-                themeToggleBtn.textContent = '☀️';
-            }
-        }
-    });
-</script>
 </body>
 </html>
