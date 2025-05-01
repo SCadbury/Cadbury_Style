@@ -1,7 +1,9 @@
 @use '../base/variables' as *;
 @use '../base/typography' as *;
 
+// ========================
 // Navbar base
+// ========================
 .navbar {
   font-family: $font-primary;
   color: $navbar-text;
@@ -13,11 +15,19 @@
   font-size: $font-primary;
   z-index: $navbar-z-index;
   box-shadow: $navbar-shadow;
-  position: sticky;
+  position: relative;
   top: 0;
   transition: background-color 0.3s ease;
   flex-wrap: wrap;
   min-height: $navbar-height;
+
+  // Modificador para desactivar sticky
+  &.navbar-static {
+    position: static !important;
+    top: auto !important;
+    z-index: 1 !important;
+    box-shadow: none !important;
+  }
 
   .navbar-logo {
     font-weight: 700;
@@ -69,16 +79,18 @@
   }
 }
 
-// Navbar transparente
+// ========================
+// 🌫 Navbar transparente
+// ========================
 .navbar-transparent {
   background-color: transparent;
   box-shadow: none;
-  color: $navbar-text;
-
+  color: black;
+  
   .navbar-logo,
   .navbar-links a,
   .theme-toggle-btn {
-    color: $navbar-text;
+    color: black;
   }
 
   .navbar-links a:hover,
@@ -87,7 +99,6 @@
   }
 }
 
-// Hamburguesa y responsive (responsive toggle)
 .navbar-checkbox {
   display: none;
 }
@@ -102,6 +113,7 @@
   padding: 0 1rem;
 }
 
+
 @media (max-width: $breakpoint-md) {
   .navbar {
     flex-wrap: wrap;
@@ -111,59 +123,19 @@
     }
 
     .navbar-links {
-      display: none !important;
+      display: none; 
       flex-direction: column;
       width: 100%;
       background: $navbar-bg;
       padding: 1rem 2rem;
-      position: absolute;
-      top: $navbar-height;
-      left: 0;
-      right: 0;
-      z-index: $navbar-z-index;
-
-      a {
-        padding: 0.5rem 0;
-        width: 100%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      }
     }
 
     .navbar-checkbox:checked ~ .navbar-links {
       display: flex !important;
     }
   }
-}
 
-// Navbar siempre tipo hamburguesa
-.navbar-hamburger-only {
-  flex-direction: column;
-  align-items: flex-start;
 
-  .navbar-toggle {
-    display: block;
-  }
-
-  .navbar-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: $navbar-bg;
-    padding: 1rem 2rem;
-
-    a {
-      padding: 0.5rem 0;
-      width: 100%;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-  }
-
-  .navbar-checkbox:checked ~ .navbar-links {
-    display: flex;
-  }
-}
-
-// Responsive refinamientos
 @media (max-width: $breakpoint-lg) {
   .navbar {
     padding: 1rem 2rem;
@@ -224,4 +196,35 @@
       font-size: 1.2rem;
     }
   }
+}
+
+// ========================
+//  Navbar tipo hamburguesa siempre
+// ========================
+.navbar-hamburger-only {
+  flex-direction: column;
+  align-items: flex-start;
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: $navbar-bg;
+    padding: 1rem 2rem;
+
+    a {
+      padding: 0.5rem 0;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .navbar-checkbox:checked ~ .navbar-links {
+    display: flex;
+  }
+}
 }

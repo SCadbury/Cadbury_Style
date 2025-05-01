@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CadburyStyle - Docs </title>
-    <script src="script.js" defer></script>
+    <script>
+      const temaGuardado = localStorage.getItem('tema') || 'theme-dark'; 
+      document.documentElement.classList.add(temaGuardado);
+    </script>
     <link rel="stylesheet" href="CadburyStyle.css">
 </head>
 <body class="pd-0 m-0">
-    <nav class="navbar navbar-deep">
-        <div class="navbar-logo">CadburyStyle</div>
-      
-        <input  type="checkbox" id="nav-toggle" class="navbar-checkbox">
-        <label for="nav-toggle" class="navbar-toggle  ">|||</label>
-      
-        <div class="navbar-links">
-          <a href="/docs/home.html">Inicio</a>
-          <a href="/docs/doc.html">Docs</a>
-          <a href="/docs/install.html">Instalación</a>
-          <button class="theme-toggle-btn">🌙</button>
-        </div>
-      </nav>
+  <nav class="navbar navbar-deep">
+    <div class="navbar-logo">CadburyStyle</div>
+  
+    <input type="checkbox" id="nav-toggle" class="navbar-checkbox">
+    <label for="nav-toggle" class="navbar-toggle">|||</label>
+  
+    <div class="navbar-links">
+      <a href="index.html">Inicio</a>
+      <a href="doc.html">Docs</a>
+      <a href="install.html">Instalación</a>
+      <button class="theme-toggle-btn">🌙</button>
+    </div>
+  </nav>  
       <div class="page-layout">
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -236,7 +239,33 @@
                 <section id="badges">
                     <h2 class="fs-30 fw-bold">Badges</h2>
                     <p>Incluye scripts ligeros para interacción y personalización dinámica.</p>
-                </section>
+                  
+                    <!-- Badge Solid -->
+                    <div class="mt-3">
+                      <h3 class="fs-20 fw-bold mb-2">Badge Solid (Sólido)</h3>
+                      <span class="badge badge-solid badge-primary">Sólido Primario</span>
+                      <span class="badge badge-solid badge-secondary">Sólido Secundario</span>
+                      <span class="badge badge-solid badge-warning">Sólido Advertencia</span>
+                      <span class="badge badge-solid badge-featured">Sólido Destacado</span>
+                      <span class="badge badge-solid badge-disabled">Sólido Desactivado</span>
+                    </div>
+                  
+                    <!-- Badge Minimal -->
+                    <div class="mt-3">
+                      <h3 class="fs-20 fw-bold mb-2">Badge Minimal (Minimalista)</h3>
+                      <span class="badge badge-minimal badge-primary">Minimal Primario</span>
+                      <span class="badge badge-minimal badge-secondary">Minimal Secundario</span>
+                      <span class="badge badge-minimal badge-warning">Minimal Advertencia</span>
+                      <span class="badge badge-minimal badge-featured">Minimal Destacado</span>
+                      <span class="badge badge-minimal badge-disabled">Minimal Desactivado</span>
+                    </div>
+                  
+                    <!-- Badge Ghost -->
+                    <div class="mt-3">
+                      <h3 class="fs-20 fw-bold mb-2">Badge Ghost (Fantasma)</h3>
+                      <span class="badge badge-ghost">Badge Fantasma</span>
+                    </div>
+                  </section>                  
             </div>
           <div class="container-section container-outline mb-5">
               <section id="botones">
@@ -452,7 +481,7 @@
       <p>Te presentamos diferentes tipos de Barras de navegación superior con estilos Cadbury.</p><br>
 
       <!-- Navbar Responsive Toggle -->
-      <nav class="navbar navbar-deep">
+      <nav class="navbar navbar-deep " style = "position: static;">
           <div class="navbar-logo">CadburyStyle</div>
 
           <input type="checkbox" id="nav-toggle" class="navbar-checkbox">
@@ -467,11 +496,11 @@
       </nav><br>
 
       <!-- Navbar SIEMPRE hamburguesa -->
-      <nav class="navbar navbar-hamburger-only bg-color-4 mt-4 text-white">
+      <nav class="navbar navbar-hamburger-only bg-color-4 mt-4 text-white" style = "position: static;">
           <div class="navbar-logo">CadburyStyle</div>
 
-          <input type="checkbox" id="nav-toggle-hamburger" class="navbar-checkbox">
-          <label for="nav-toggle-hamburger" class="navbar-toggle">☰</label>
+          <input type="checkbox" id="nav-toggle-hamburger" class="navbar-checkbox" style = "position: static;">
+          <label for="nav-toggle-hamburger" class="navbar-toggle">|||</label>
 
           <div class="navbar-links">
               <a href="#">Inicio</a>
@@ -485,14 +514,14 @@
           <div class="navbar-logo">CadburyStyle</div>
 
           <input type="checkbox" id="nav-toggle-transparent" class="navbar-checkbox">
-          <label for="nav-toggle-transparent" class="navbar-toggle">☰</label>
+          <label for="nav-toggle-transparent" class="navbar-toggle">|||</label>
 
           <div class="navbar-links">
               <a href="#">Inicio</a>
               <a href="#">Docs</a>
               <a href="#">Contacto</a>
           </div>
-      </nav><br>
+      </nav><br><br>
 
       <!-- Ejemplos de uso -->
        <h2>Ejemplos de uso </h2><br>
@@ -977,29 +1006,56 @@
       </main>
     </div>
     <footer class="footer footer-columns bg-color-4">
-        <div class="column">
-          <h4>Recursos</h4>
-          <ul>
-            <li><a href="#">Documentación</a></li>
-            <li><a href="#">Guías</a></li>
-            <li><a href="#">Tutoriales</a></li>
-          </ul>
-        </div>
-      
-        <div class="column">
-          <h4>Cadbury Style</h4>
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Ejemplos</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </div>
-      
-        <hr>
-      
-        <div class="footer-bottom">
-          &copy; 2025 CadburyStyle. Todos los derechos reservados.
-        </div>
-      </footer>
+      <div class="column">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="doc.html">Documentación</a></li>
+          <li><a href="install.html">Guías</a></li>
+          <li><a href="index.html">Tutoriales</a></li>
+        </ul>
+      </div>
+    
+      <div class="column">
+        <h4>Cadbury Style</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="doc.html">Ejemplos</a></li>
+          <li><a href="doc.html">Contacto</a></li>
+        </ul>
+      </div>
+    
+      <hr>
+    
+      <div class="footer-bottom">
+        &copy; 2025 CadburyStyle. Todos los derechos reservados.
+      </div>
+    </footer>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const themeToggleBtn = document.querySelector('.theme-toggle-btn');
+          const root = document.documentElement;
+
+          // Establecer icono correcto según tema
+          const temaActual = root.classList.contains('theme-light') ? 'theme-light' : 'theme-dark';
+          actualizarIcono(temaActual);
+
+          themeToggleBtn.addEventListener('click', function() {
+              if (root.classList.contains('theme-light')) {
+                  root.classList.replace('theme-light', 'theme-dark');
+                  localStorage.setItem('tema', 'theme-dark');
+                  actualizarIcono('theme-dark');
+              } else {
+                  root.classList.replace('theme-dark', 'theme-light');
+                  localStorage.setItem('tema', 'theme-light');
+                  actualizarIcono('theme-light');
+              }
+          });
+
+          function actualizarIcono(tema) {
+              themeToggleBtn.textContent = (tema === 'theme-light') ? '🌙' : '☀️';
+          }
+      });
+    </script> 
 </body>
 </html>
