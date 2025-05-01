@@ -17,7 +17,7 @@
   top: 0;
   transition: background-color 0.3s ease;
   flex-wrap: wrap;
-  min-height: $navbar-height;  
+  min-height: $navbar-height;
 
   .navbar-logo {
     font-weight: 700;
@@ -54,31 +54,6 @@
     }
   }
 
-  .navbar-search {
-    max-width: 250px;
-
-    .form-control {
-      width: 100%;
-      padding: 0.4rem 0.8rem;
-      border-radius: 6px;
-      border: none;
-      background-color: rgba(255, 255, 255, 0.9);
-      color: $color-primary-dark;
-      box-shadow: $shadow-sm;
-      font-size: 0.9rem;
-
-      &::placeholder {
-        color: #888;
-      }
-
-      &:focus {
-        outline: none;
-        border-color: $color-accent-gold;
-        box-shadow: 0 0 0 3px rgba($color-accent-gold, 0.25);
-      }
-    }
-  }
-
   .theme-toggle-btn {
     background: none;
     border: none;
@@ -93,34 +68,108 @@
     }
   }
 }
+
+// Navbar transparente
+.navbar-transparent {
+  background-color: transparent;
+  box-shadow: none;
+  color: $navbar-text;
+
+  .navbar-logo,
+  .navbar-links a,
+  .theme-toggle-btn {
+    color: $navbar-text;
+  }
+
+  .navbar-links a:hover,
+  .theme-toggle-btn:hover {
+    color: $navbar-hover;
+  }
+}
+
+// Hamburguesa y responsive (responsive toggle)
+.navbar-checkbox {
+  display: none;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  color: $text-color-white;
+  margin-left: auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: $breakpoint-md) {
+  .navbar {
+    flex-wrap: wrap;
+
+    .navbar-toggle {
+      display: block;
+    }
+
+    .navbar-links {
+      display: none !important;
+      flex-direction: column;
+      width: 100%;
+      background: $navbar-bg;
+      padding: 1rem 2rem;
+      position: absolute;
+      top: $navbar-height;
+      left: 0;
+      right: 0;
+      z-index: $navbar-z-index;
+
+      a {
+        padding: 0.5rem 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .navbar-checkbox:checked ~ .navbar-links {
+      display: flex !important;
+    }
+  }
+}
+
+// Navbar siempre tipo hamburguesa
+.navbar-hamburger-only {
+  flex-direction: column;
+  align-items: flex-start;
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: $navbar-bg;
+    padding: 1rem 2rem;
+
+    a {
+      padding: 0.5rem 0;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .navbar-checkbox:checked ~ .navbar-links {
+    display: flex;
+  }
+}
+
+// Responsive refinamientos
 @media (max-width: $breakpoint-lg) {
   .navbar {
     padding: 1rem 2rem;
 
     .navbar-links {
       gap: 1.5rem;
-    }
-  }
-}
-
-@media (max-width: $breakpoint-md) {
-  .navbar {
-    padding: 0.75rem 1.5rem;
-
-    .navbar-logo {
-      font-size: 1.5rem;
-    }
-
-    .navbar-links {
-      gap: 1.25rem;
-
-      a {
-        font-size: 0.95rem;
-      }
-    }
-
-    .theme-toggle-btn {
-      font-size: 1.3rem;
     }
   }
 }
@@ -148,17 +197,6 @@
       flex-direction: column;
       width: 100%;
       gap: 1rem;
-
-      a {
-        font-size: 1rem;
-        padding: 0.5rem 0;
-        width: 100%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      }
-    }
-
-    .navbar-search {
-      width: 100%;
     }
 
     .theme-toggle-btn {
@@ -185,40 +223,5 @@
     .theme-toggle-btn {
       font-size: 1.2rem;
     }
-  }
-}
-/* MeNU de ahmburguer*/
-.navbar-checkbox,
-.navbar-toggle {
-  display: none;
-}
-
-@media (max-width: $breakpoint-md) {
-  /* Mostrar icono */
-  .navbar-toggle {
-    display: block;
-    font-size: 1.6rem;
-    color: $text-color-white;
-    cursor: pointer;
-    margin-left: auto;
-    padding: 0 1rem;
-  }
-
-  /* Ocultar links por defecto */
-  .navbar-links {
-    display: none !important;
-  }
-
-  /* Al activar el checkbox, mostrar en columna */
-  .navbar-checkbox:checked ~ .navbar-links {
-    display: flex !important;
-    flex-direction: column;
-    gap: 1rem;
-    background: $navbar-bg;
-    padding: 1rem 2rem;
-    position: absolute;
-    top: $navbar-height;
-    left: 0;
-    right: 0;
   }
 }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabdury Style</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="CadburyStyle.css">
+</head>
+<body>
+  <nav class="navbar navbar-deep">
+    <div class="navbar-logo">CadburyStyle</div>
+  
+    <input  type="checkbox" id="nav-toggle" class="navbar-checkbox">
+    <label for="nav-toggle" class="navbar-toggle  ">|||</label>
+  
+    <div class="navbar-links">
+      <a href="/docs/home.html">Inicio</a>
+      <a href="/docs/doc.html">Docs</a>
+      <a href="/docs/install.html">Instalacion</a>
+      <button class="theme-toggle-btn">🌙</button>
+    </div>
+  </nav>
+
+  <div class="docs-layout">
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Introducción</a></li>
+                <li><a href="#instalacion">Instalacion</a></li>
+                <li><a href="#descubrir">Descubrir</a></li>
+                <li><a href="#accesibilidad">Accesibilidad</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="container">
+        <section id="inicio">
+          <div class="container-centered">
+            <img src="../docs/img/logo-dorado.png" alt="" width="auto" height="100px">
+          </div>
+          <h2 class="fs-20 fw-semibold text-center text-color-brown">La dulzura del diseño, ahora en tu código.</h2>
+    
+          <p class="fs-18 text-justify fw-bold mt-9  mb-2">
+            CadburyStyle es una librería de estilos elegante y moderna, inspirada en la estética del chocolate Cadbury
+          </p>
+          <p class="fs-18 text-justify mb-2">
+            Diseñada para brindar una experiencia visual rica, profesional y dulce, CadburyStyle ofrece una colección de componentes, utilidades y estilos personalizables para acelerar tu desarrollo frontend con un toque distintivo.
+          </p>
+          <p class="fs-18 text-justify mb-10">
+            Usa clases simples, aplica colores únicos y crea interfaces memorables desde el primer momento. Sin complicaciones, solo dulzura visual.
+          </p>
+        </section>
+      </div>
+    
+      <section id="instalacion" class="container">
+        <h2 class="fs-30 fw-bold">Instalación</h2>
+        <p class="fs-18 text-justify mb-2">
+          Para integrar esta librería a tu proyecto, simplemente enlaza el archivo CSS en tu documento HTML. Asegúrate de ubicarlo dentro del &lt;head&gt;.
+        </p>
+        <p class="fs-18 text-justify mb-5">
+          Puedes descargarlo directamente haciendo click en el botón a continuación:
+        </p>
+      
+        <div class="text-center mt-8 mb-8">
+          <a href="/docs/CadburyStyle.css" download class="ds-btn ds-btn-chocolate">Descargar librería</a>
+        </div>
+      
+        <p class="fs-18 text-justify mb-3">
+          Tu <code>&lt;head&gt;</code> deberá contener la siguiente línea para referenciar correctamente el archivo CSS:
+        </p>
+      
+        <div class="container-code">
+          <pre><code class="language-html">&lt;link rel="stylesheet" href="ruta/a/CadburyStyle.css"&gt;</code></pre>
+        </div>
+      
+        <p class="fs-18 text-justify mb-3">
+          También puedes usar nuestro CDN oficial para enlazar la librería sin descargar archivos locales:
+        </p>
+      
+        <div class="container-code">
+          <pre><code class="language-html">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SCadbury/Cadbury_Style@main/docs/CadburyStyle.css"&gt;</code></pre>
+        </div>
+      
+        <p class="fs-18 text-justify mb-9">
+          Una vez enlazado de cualquiera de estas maneras, ya puedes utilizar todas las utilidades, componentes y clases personalizadas que ofrecemos. ¡Disfruta de la dulzura de CadburyStyle en tu proyecto!
+        </p>
+      </section>
+      
+    
+      <section id="descubrir" class="container">
+        <h2 class="fs-30 fw-bold">Descubrir</h2>
+        <p class="fs-18 text-justify fw-bold mb-2">
+          ¿Sabías que CadburyStyle cuenta con estilos para todo tipo de intereses?
+        </p>
+        <p class="fs-18 text-justify mb-2">
+          Marcado estructural y buenas prácticas: CadburyStyle está diseñado para aplicarse sobre una amplia variedad de estructuras HTML. La documentación oficial busca no solo mostrarte cómo utilizar la librería, sino también brindarte ejemplos de buenas prácticas en el uso de HTML semántico.
+        </p>
+        <p class="fs-18 text-justify mb-2">
+          Esto incluye recomendaciones sobre etiquetas correctas para los distintos elementos disponibles, así como estrategias para mejorar la accesibilidad como el uso adecuado.
+        </p>
+        <p class="fs-18 text-justify">
+          Explora la documentación completa para descubrir otros elementos personalizables y utilidades integradas.
+        </p>
+        <p class="fs-18 text-justify mb-10">
+          Podrás encontrar una gran diversidad de contenido y aprender mucho más de esto en el apartado de <a href="/docs/doc.html" class="text-color-accent-gold fw-bold underline-hover">documentación</a>.
+        </p>
+      </section>
+    
+      <section id="accesibilidad" class="container">
+        <h2 class="fs-30 fw-bold">Accesibilidad</h2>
+        <p class="fs-18 text-justify mb-2">
+          La librería ha sido diseñada pensando en la facilidad de lectura, navegación fluida y compatibilidad,
+          esta provee una forma de uso facil, herramientas para llenar de estilo tus paginas web y asi destacar entre
+          todas las demas.
+        </p>
+        <p class="fs-18 text-justify mb-2">
+          CadburyStyle ha sido creada con principios de accesibilidad en mente para asegurar que cualquier usuario,
+          ofrece una estructura clara, herramientas semánticas y una combinación de colores con contraste suficiente que mejora la experiencia visual.
+        </p>
+        <p class="fs-18 text-justify mb-2">
+          Algunas de las ventajas que presenta utilizarla: 
+        </p>
+        <div class="container-outline">
+          <p class="fs-18 text-left mt-3 mb-3">
+            🗄️Sintaxis facil de comprender y facil de digitar: clases predecibles y fáciles de recordar.
+          </p>
+          <p class="fs-18 text-left mt-3 mb-3">
+            🗄️Colores y contrastes que favorecen la legibilidad.
+          </p>
+          <p class="fs-18 text-left mt-3 mb-3">
+            🗄️Diseño adaptable a distintos tamaños de pantalla: adaptabilidad garantizada en pantallas móviles, tablets y escritorios.
+          </p>
+          <p class="fs-18 text-left mt-3 mb-3">
+            🗄️Evita el uso excesivo de animaciones: todos los efectos visuales son sutiles.
+          </p>
+        </div>
+      </section>
+    </main>
+    
+  
+  </div>
+
+  <footer class="footer footer-columns bg-color-4">
+    <div class="column">
+      <h4>Recursos</h4>
+      <ul>
+        <li><a href="#">Documentación</a></li>
+        <li><a href="#">Guías</a></li>
+        <li><a href="#">Tutoriales</a></li>
+      </ul>
+    </div>
+  
+    <div class="column">
+      <h4>Cadbury Style</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Ejemplos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  
+    <hr>
+  
+    <div class="footer-bottom">
+      &copy; 2025 CadburyStyle. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>
