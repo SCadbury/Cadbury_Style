@@ -87,6 +87,45 @@
     color: #858585;
     text-transform: uppercase;
   }
+
+/*Clases para el contenedor del cdn*/
+.container-code-cdn{
+  background-color: #1e1e1e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 700px;
+  border-radius: 5px;
+}
+.container-copy{
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+}
+.copy-code[class*="language-"]{
+  background-color: #1e1e1e;
+  text-shadow: none;
+}
+.pre-codigo-cdn, .copy-code{
+  overflow-x: auto;
+}
+.pre-codigo-cdn[class*="language-"]{
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-btn-copiar{
+  background: transparent;
+  border: none;
+  color: #858585;
+  font-family: 'Fira Code', 'Consolas', monospace;
+}
+.container-btn-copiar:hover{
+  color: $color-white;
+}
+.container-btn-copiar:active{
+  color: $alert-success;
+}
   
   /*Colores de la sintaxis para container de código*/
   .container-code .comment {

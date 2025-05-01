@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CadburyStyle</title>
+    <title>CadburyStyle - Docs </title>
     <script>
       const temaGuardado = localStorage.getItem('tema') || 'theme-dark'; 
       document.documentElement.classList.add(temaGuardado);
@@ -20,63 +20,64 @@
         <div class="navbar-links">
           <a href="/docs/home.html">Inicio</a>
           <a href="/docs/doc.html">Docs</a>
-          <a href="/docs/examples.html">Ejemplos</a>
+          <a href="/docs/install.html">Instalación</a>
           <button class="theme-toggle-btn">🌙</button>
         </div>
       </nav>
-
-    <div class="flex">
-        <aside class="sidebar sidebar-fixed">
-            <div class="mt-2 mb-2">
-                <h1 class="text-color-white fs-28 text-center fw-bold">Menú de Navegación</h1>
+      <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="mt-2 mb-2">
+            <h1 class="text-color-white fs-28 text-center fw-bold">Menú de Navegación</h1>
+          </div>
+          <nav>
+            <div>
+              <h2 class="text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">General</h2>
+              <ul>
+                <li><a href="#inicio">Introducción</a></li>
+              </ul>
             </div>
-            <nav>
-                <div class="nav-section">
-                    <h2 class="text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">General</h2>
-                    <ul>
-                        <li><a href="#inicio">Introducción</a></li>
-                    </ul>
-                </div>
-                <div class="nav-section">
-                    <h2 class=" text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">Base</h3>
-                    <ul>
-                        <li><a href="#texto">Texto</a></li>
-                        <li><a href="#variable">Variable</a></li>
-                    </ul>
-                </div>
-                <div class="nav-section">
-                    <h2 class="text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">Componentes</h3>
-                    <ul>
-                        <li><a href="#alertas">Alertas</a></li>
-                        <li><a href="#badges">Badges</a></li>
-                        <li><a href="#botones">Botones</a></li>
-                        <li><a href="#cards">Tarjetas</a></li>
-                        <li><a href="#footer">Footer</a></li>
-                        <li><a href="#forms">Formularios</a></li>
-                        <li><a href="#navbar">Navbar</a></li>
-                        <li><a href="#search">Busqueda</a></li>
-                    </ul>
-                </div>
-                <div class="nav-section">
-                    <h2 class="text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">Layout</h3>
-                    <ul>
-                        <li><a href="#container">Contenedores</a></li>
-                        <li><a href="#flex">Flex</a></li>
-                        <li><a href="#grid">Grid</a></li>
-                    </ul>
-                </div>
-                <div class="nav-section">
-                    <h2 class="text-color-accent-gold fs-14 text-center fw-bold mt-1 mb-1">Utilidades</h3>
-                    <ul>
-                        <li><a href="#borders">Bordes</a></li>
-                        <li><a href="#colores">Colores</a></li>
-                        <li><a href="#display">Display</a></li>
-                        <li><a href="#position">Alineaciones de texto</a></li>
-                        <li><a href="#shadow">Sombreado</a></li>
-                        <li><a href="#spacion">Margenes</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div>
+              <h2 class="text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">Base</h2>
+              <ul>
+                <li><a href="#texto">Texto</a></li>
+                <li><a href="#variable">Variable</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">Componentes</h2>
+              <ul>
+                <li><a href="#alertas">Alertas</a></li>
+                <li><a href="#badges">Badges</a></li>
+                <li><a href="#botones">Botones</a></li>
+                <li><a href="#cards">Tarjetas</a></li>
+                <li><a href="#footer">Footer</a></li>
+                <li><a href="#forms">Formularios</a></li>
+                <li><a href="#navbar">Navbar</a></li>
+                <li><a href="#search">Búsqueda</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">Layout</h2>
+              <ul>
+                <li><a href="#container">Contenedores</a></li>
+                <li><a href="#flex">Flex</a></li>
+                <li><a href="#grid">Grid</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="text-color-accent-gold fs-14 text-center fw-bold mt-1 mb-1">Utilidades</h2>
+              <ul>
+                <li><a href="#borders">Bordes</a></li>
+                <li><a href="#colores">Colores</a></li>
+                <li><a href="#display">Display</a></li>
+                <li><a href="#position">Alineaciones de texto</a></li>
+                <li><a href="#shadow">Sombreado</a></li>
+                <li><a href="#spacion">Márgenes</a></li>
+              </ul>
+              <br><br><br>
+            </div>
+          </nav>
         </aside>
         <main class="main-content">
           <div class="container-section">
@@ -89,10 +90,6 @@
                   <br>
                   <h1 class="text-center fw-bold">Tu librería elegante para interfaces dulces y profesionales. Inspirada en la sobriedad del chocolate y la elegancia del morado Cadbury.</h1>
                   <br>
-                  <button class="ds-btn ds-btn-chocolate">  
-                    Chocolate
-                    <div class="bite"><span></span></div>
-                  </button>
                   <p class="text-justify ff-2">Dale un toque delicioso a tus proyectos web con esta exclusiva colección de componentes inspirados en el inconfundible sabor y calidad del chocolate Cadbury. Con una paleta de colores basada en tonos morados profundos, ricos chocolates y acentos dorados, nuestra librería ofrece una experiencia visual tan irresistible como el propio dulce.</p><br>
                   <p class="text-justify ff-2">Desde botones suaves como un trozo de chocolate hasta tarjetas elegantes que reflejan la suavidad y el lujo de Cadbury, cada elemento ha sido diseñado para añadir ese toque de indulgencia a tu sitio. Los formularios emulan la cremosidad y textura perfecta, mientras que las alertas dinámicas te ofrecen una experiencia interactiva que resalta con el brillo de un chocolate premium.</p><br>
                   <p class="text-justify ff-2">Nuestra barra de navegación fluye con la misma suavidad que una barra de Cadbury, guiando a tus usuarios de manera sencilla y elegante por tu web. Además, los distintivos (badges) te permiten resaltar los momentos más dulces y especiales de tu plataforma, al igual que el empaque dorado que identifica a Cadbury.</p><br>
@@ -191,25 +188,19 @@
 
                     <div class="container-code">
                         <span class="comment">&lt;!-- Ejemplos de uso de las variables SCSS --&gt;</span><br>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"bg-color-primary"</span><span class="variable">></span>Texto con fondo morado base<span class="variable"><</span>/div>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"text-color-accent-gold"</span><span class="variable">></span>Texto dorado de acento<span class="variable"><</span>/div>
+
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"shadow-sm"</span><span class="variable">></span>Elemento con sombra pequeña<span class="variable"><</span>/div>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"shadow-lg"</span><span class="variable">></span>Elemento con sombra grande<span class="variable"><</span>/div>
                         
-                        <!-- Usar la paleta base de colores -->
-                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"bg-color-primary"</span><span class="variable">></span>Texto con fondo morado base<span class="variable"><</span>/div><br>
-                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"text-color-accent-gold"</span><span class="variable">></span>Texto dorado de acento<span class="variable"><</span>/div><br>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"alert alert-success"</span><span class="variable">></span>Alerta de éxito<span class="variable"><</span>/div>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"alert alert-warning"</span><span class="variable">></span>Alerta de advertencia<span class="variable"><</span>/div>
                         
-                        <!-- Usar sombras -->
-                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"shadow-sm"</span><span class="variable">></span>Elemento con sombra pequeña<span class="variable"><</span>/div><br>
-                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"shadow-lg"</span><span class="variable">></span>Elemento con sombra grande<span class="variable"><</span>/div><br>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"dark-theme"</span><span class="variable">></span>Modo oscuro: fondo y texto invertido<span class="variable"><</span>/div>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"light-theme"</span><span class="variable">></span>Modo claro: fondo y texto suave<span class="variable"><</span>/div>
                         
-                        <!-- Usar colores para alertas -->
-                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"alert alert-success"</span><span class="variable">></span>Alerta de éxito<span class="variable"><</span>/div><br>
-                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"alert alert-warning"</span><span class="variable">></span>Alerta de advertencia<span class="variable"><</span>/div><br>
-                        
-                        <!-- Usar variables de tema oscuro y claro -->
-                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"dark-theme"</span><span class="variable">></span>Modo oscuro: fondo y texto invertido<span class="variable"><</span>/div><br>
-                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"light-theme"</span><span class="variable">></span>Modo claro: fondo y texto suave<span class="variable"><</span>/div><br>
-                        
-                        <!-- Usar los tamaños de fuente y espaciado -->
-                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"fs-16"</span><span class="variable">></span>Texto con tamaño de fuente 16px<span class="variable"><</span>/p><br>
+                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"fs-16"</span><span class="variable">></span>Texto con tamaño de fuente 16px<span class="variable"><</span>/p>
                         <span class="variable"><</span>div <span class="function">class=</span><span class="string">"p-4"</span><span class="variable">></span>Div con padding de 4rem (espaciado 4)</span><br>
                     </div>                    
                 </section>
@@ -234,7 +225,7 @@
                     <div class="alerta-error">Error en la operación</div>
                     <div class="alerta-error-sb">Error en la operación</div>
             
-                    <h2>Ejemplo de uso</h2>
+                    <h2>Ejemplo de uso</h2><br>
                     <!-- Código de uso en HTML dentro del container-code -->
                     <div class="container-code">
 
@@ -320,11 +311,50 @@
               </section>
           </div>  
           <div class="container-section container-outline mb-5">
-              <section id="cards">
-                  <h2 class="fs-30 fw-bold">Tarjetas</h2>
-                  <p>Construido con buenas prácticas para que todos disfruten tu producto, sin importar sus capacidades.</p>
-              </section>
+            <section id="cards">
+              <h2 class="fs-30 fw-bold">Tarjetas</h2>
+              <p>Construido con buenas prácticas para que todos disfruten tu producto, sin importar sus capacidades.</p>
+              <div class="d-flex justify-center flex-wrap bg-gap-20">
+                  <!-- Card Número 1 -->
+                  <div class="Tarjeta__1" style="width: 280px;">
+                      <img src="https://www.telemundo.com/sites/nbcutelemundo/files/images/article/cover/2018/04/26/mujer-comiendo-trozo-de-chocolate_0.jpg" alt="Imagen Card 1">
+                      <div class="card1__contenido">
+                          <h3>Chocolate Premium</h3>
+                          <p>Deléitate con el sabor auténtico del cacao con el toque elegante de Cadbury.</p>
+                          <a href="#">Descubrir más</a>
+                      </div>
+                  </div>
+          
+                  <!-- Card Número 2 -->
+                  <div class="Tarjeta__2" style="width: 280px;">
+                      <img src="https://www.telemundo.com/sites/nbcutelemundo/files/images/article/cover/2018/04/26/mujer-comiendo-trozo-de-chocolate_0.jpg" alt="Imagen Card 2">
+                      <div class="card2__contenido">
+                          <h3>Edición Dorada</h3>
+                          <p>El lujo en cada mordisco, con nuestro exclusivo toque dorado.</p>
+                          <a href="#">Ver detalles</a>
+                      </div>
+                  </div>
+          
+                  <!-- Card Número 3 -->
+                  <div class="card_3" style="background-image: url('https://www.telemundo.com/sites/nbcutelemundo/files/images/article/cover/2018/04/26/mujer-comiendo-trozo-de-chocolate_0.jpg'); width: 280px; height: 200px; background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; color: white;">
+                      <div>
+                          <h2>Cadbury Lovers</h2>
+                          <a href="#">Explorar</a>
+                      </div>
+                  </div>
+          
+                  <!-- Card Número 4 -->
+                  <div class="card_4" style="width: 280px;">
+                      <img src="https://www.telemundo.com/sites/nbcutelemundo/files/images/article/cover/2018/04/26/mujer-comiendo-trozo-de-chocolate_0.jpg" alt="Imagen Card 4">
+                      <div class="intro">
+                          <h1>Pasión por el Cacao</h1>
+                          <p>Un mundo de sabor y elegancia.</p>
+                      </div>
+                  </div>
+              </div>
+            </section>
           </div>
+          <!-- FOOTER -->
           <div class="container-section container-outline mb-5">
             <section id="footer">             
                 <h2 class="fs-30 fw-bold">Footer</h2>
@@ -379,12 +409,14 @@
                   
             </section>
         </div>
+        <!-- FORMULARIO-->
         <div class="container-section container-outline mb-5">
             <section id="forms">
                 <h2 class="fs-30 fw-bold">Formularios</h2>
                 <p>Campos de entrada elegantes con experiencia de usuario suave.</p>
             </section>
         </div>
+        <!-- NAVBAR -->
         <div class="container-section container-outline mb-5">
             <section id="navbar">
                 <h2 class="fs-30 fw-bold">Navbar</h2>
@@ -433,19 +465,57 @@
                 </nav>
              
               </section>
-              </div>              
+              </div>                       
+        <!-- LAYOUTS --> 
+        <h1 class="ff-1 fs-30 fw-bold text-color-accent-gold">Layout</h1><br>
         <div class="container-section container-outline mb-5">
-            <section id="search">
-                <h2 class="fs-30 fw-bold">Búsqueda</h2>
-                <p>Componentes para entrada de texto y filtros de búsqueda.</p>
-            </section>
-        </div>
-        <h1 class="ff-1 fs-30 fw-bold text-color-accent-gold">Layout</h1>
-        <div class="container-section container-outline mb-5">
-            <section id="container">
-                <h2 class="fs-30 fw-bold">Contenedores</h2>
-                <p>Elementos estructurales para organizar tus componentes.</p>
-            </section>
+            <!-- Containers -->
+            <section id="containers">
+                <h2 class="fs-30 fw-bold">Containers</h2>
+                <p>Cadbury Style incluye distintos tipos de contenedores adaptables, decorativos y utilitarios.</p>
+              
+                <!-- Container estándar -->
+                <div class="container mt-3">
+                  <h3 class="fs-20 fw-bold">Container estándar</h3>
+                  <p>Este container tiene un ancho máximo que se adapta según el tamaño de pantalla.</p>
+                </div>
+              
+                <!-- Container fluido -->
+                <div class="container-fluid mt-3" style="background-color: #f9f9f9;">
+                  <h3 class="fs-20 fw-bold">Container fluido</h3>
+                  <p>Este container ocupa el 100% del ancho de la ventana sin límites.</p>
+                </div>
+              
+                <!-- Container con borde decorativo -->
+                <div class="container-outline mt-3">
+                  <h3 class="fs-20 fw-bold">Container Outline</h3>
+                  <p>Este tipo tiene un borde punteado y sombra ligera para destacar secciones.</p>
+                </div>
+              
+                <!-- Container con imagen de fondo -->
+                <div class="container-image-bg mt-3" style="background-image: url('/docs/img/logo-primary-2.png');">
+                  <h3 class="fs-20 fw-bold">Container con fondo</h3>
+                  <p>Perfecto para secciones destacadas o encabezados con fondo visual.</p>
+                </div>
+              
+                <!-- Container centrado -->
+                <div class="container-centered mt-3" style="background-color: #f0f0f0;">
+                  <h3 class="fs-20 fw-bold">Container centrado</h3>
+                  <p>El contenido está centrado tanto vertical como horizontalmente.</p>
+                </div>
+              
+                <!-- Container para código -->
+                <div class="container-code">
+                  <span class="comment">// Ejemplo de código</span><br>
+                  <span class="variable">const</span> <span class="function">saludo</span> = <span class="string">"Hola Cadbury Style"</span>;
+                </div>
+              
+                <!-- Container personalizable con modificadores -->
+                <div class="container-personalizable is-centered has-spacing" style="background-color: #e7f7ff;">
+                  <h3 class="fs-20 fw-bold">Container Personalizable</h3>
+                  <p>Se adapta como el estándar pero permite modificadores de centrado y separación.</p>
+                </div>
+              </section>
         </div>
         <div class="container-section container-outline mb-5">
             <section id="flex">
@@ -549,6 +619,6 @@
               themeToggleBtn.textContent = (tema === 'theme-light') ? '🌙' : '☀️';
           }
       });
-    </script>
+    </script> 
 </body>
 </html>
