@@ -1,5 +1,3 @@
-
-
   <h1 align="center">¡Bienvenido al repositorio de Cadbury Style! 🍫</h1>
 
   <p align="center">
@@ -23,7 +21,7 @@
     <li>🧩 Componentes CSS listos para usar: botones, tarjetas, formularios, modales, alertas y más.</li>
     <li>📱 Diseño responsive para adaptarse a cualquier dispositivo.</li>
     <li>⚙️ Estilo elegante, ideal para marcas premium, tiendas, y proyectos personales creativos.</li>
-    <li>🌙 Soporte para modo oscuro (próximamente).</li>
+    <li>🌙 Soporte para modo oscuro (Por defecto).</li>
   </ul>
 
 <h2>🚀 ¿Cómo usar Cadbury Style?</h2>
@@ -61,8 +59,9 @@
   <ul>
     <li>Pedro David Ramos García</li>
     <li>Walter Bryan Romero Hernández</li>
-    <li>Josué Ivan Molina</li>
-    <li>Cesar Zuleta</li>
+    <li>Josué Iván Molina Romero </li>
+    <li>César Josué Zuleta Villalobos 
+</li>
   </ul>
 </body>
 </html>
