@@ -1,5 +1,6 @@
 /* Variables */
 @use '../base/variables' as *;
+@use '../base/typography' as *;
 
 /* Estilos Generales */
 .ds-btn {
@@ -165,6 +166,40 @@
   background-color: $color-brown;
   color: $color-white;
 }
+
+.ds-btn-chocolate {
+  @extend .ds-btn;
+  background-color: $color-brown;
+  border-radius: 0%;
+  color: $color-white;
+  position: relative;
+  overflow: hidden;
+  padding: 0.8rem 1.5rem;
+  font-family: $font-secondary;
+  font-size: 1rem;
+  box-shadow:
+    inset 0 0.2rem 0 rgba(255, 255, 255, 0.08),
+    0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+  line-height: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 1rem 1rem;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &:hover {
+  background-color: $color-brown opacity($color: #761717);
+  transition: background-color 0.3s ease;
+  }
+}
+
 
 /* Tamaños de botones */
 .ds-btn-xs {
