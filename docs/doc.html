@@ -11,15 +11,19 @@
     <link rel="stylesheet" href="CadburyStyle.css">
 </head>
 <body class="pd-0 m-0">
-    <nav class="navbar navbar-deep bg-color-4">
+    <nav class="navbar navbar-deep">
         <div class="navbar-logo">CadburyStyle</div>
+      
+        <input  type="checkbox" id="nav-toggle" class="navbar-checkbox">
+        <label for="nav-toggle" class="navbar-toggle  ">|||</label>
+      
         <div class="navbar-links">
-            <a href="/docs/home.html">Inicio</a>
-            <a href="/docs/doc.html">Documentación</a>
-            <a href="/docs/examples.html">Ejemplos</a>
-            <button class="theme-toggle-btn" aria-label="Cambiar tema">🌙</button>
+          <a href="/docs/home.html">Inicio</a>
+          <a href="/docs/doc.html">Docs</a>
+          <a href="/docs/examples.html">Ejemplos</a>
+          <button class="theme-toggle-btn">🌙</button>
         </div>
-    </nav>
+      </nav>
 
     <div class="flex">
         <aside class="sidebar sidebar-fixed">
@@ -85,6 +89,10 @@
                   <br>
                   <h1 class="text-center fw-bold">Tu librería elegante para interfaces dulces y profesionales. Inspirada en la sobriedad del chocolate y la elegancia del morado Cadbury.</h1>
                   <br>
+                  <button class="ds-btn ds-btn-chocolate">  
+                    Chocolate
+                    <div class="bite"><span></span></div>
+                  </button>
                   <p class="text-justify ff-2">Dale un toque delicioso a tus proyectos web con esta exclusiva colección de componentes inspirados en el inconfundible sabor y calidad del chocolate Cadbury. Con una paleta de colores basada en tonos morados profundos, ricos chocolates y acentos dorados, nuestra librería ofrece una experiencia visual tan irresistible como el propio dulce.</p><br>
                   <p class="text-justify ff-2">Desde botones suaves como un trozo de chocolate hasta tarjetas elegantes que reflejan la suavidad y el lujo de Cadbury, cada elemento ha sido diseñado para añadir ese toque de indulgencia a tu sitio. Los formularios emulan la cremosidad y textura perfecta, mientras que las alertas dinámicas te ofrecen una experiencia interactiva que resalta con el brillo de un chocolate premium.</p><br>
                   <p class="text-justify ff-2">Nuestra barra de navegación fluye con la misma suavidad que una barra de Cadbury, guiando a tus usuarios de manera sencilla y elegante por tu web. Además, los distintivos (badges) te permiten resaltar los momentos más dulces y especiales de tu plataforma, al igual que el empaque dorado que identifica a Cadbury.</p><br>
@@ -292,9 +300,57 @@
               </section>
           </div>
           <div class="container-section container-outline mb-5">
-            <section id="footer">
+            <section id="footer">             
                 <h2 class="fs-30 fw-bold">Footer</h2>
                 <p>Pie de página estilizado para rematar tus sitios con elegancia.</p>
+                    <footer class="footer  bg-color-1">
+                    <div class="navbar-logo">CadburyStyle</div>
+                    <p>Transforma tu forma de escribir CSS.</p>
+                    <div class="footer-bottom">
+                      &copy; 2025 CadburyStyle. Todos los derechos reservados.
+                    </div>
+                  </footer>
+                    
+                  <br>
+                  <footer class="footer footer-social bg-color-2">
+                    <p>Síguenos en nuestras redes sociales</p>
+                    <div class="social-icons">
+                      <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                      <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                    <div class="footer-bottom">
+                      &copy; CadburyStyle 2025
+                    </div>
+                  </footer>
+                    <br>     
+                <footer class="footer footer-columns bg-color-4">
+                    <div class="column">
+                      <h4>Recursos</h4>
+                      <ul>
+                        <li><a href="#">Documentación</a></li>
+                        <li><a href="#">Guías</a></li>
+                        <li><a href="#">Tutoriales</a></li>
+                      </ul>
+                    </div>
+                  
+                    <div class="column">
+                      <h4>Cadbury Style</h4>
+                      <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Ejemplos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                      </ul>
+                    </div>
+                  
+                    <hr>
+                  
+                    <div class="footer-bottom">
+                      &copy; 2025 CadburyStyle. Todos los derechos reservados.
+                    </div>
+                  </footer>
+                  
+                  
             </section>
         </div>
         <div class="container-section container-outline mb-5">
@@ -307,8 +363,51 @@
             <section id="navbar">
                 <h2 class="fs-30 fw-bold">Navbar</h2>
                 <p>Barra de navegación superior con estilos Cadbury.</p>
-            </section>
-        </div>
+                
+                <!--Navbar Responsive Toggle -->
+                <nav class="navbar navbar-deep">
+                    <div class="navbar-logo">CadburyStyle</div>
+                  
+                    <input  type="checkbox" id="nav-toggle" class="navbar-checkbox">
+                    <label for="nav-toggle" class="navbar-toggle  ">|||</label>
+                  
+                    <div class="navbar-links">
+                      <a href="/docs/home.html">Inicio</a>
+                      <a href="/docs/doc.html">Docs</a>
+                      <a href="/docs/examples.html">Ejemplos</a>
+                      <button class="theme-toggle-btn">🌙</button>
+                    </div>
+                  </nav>
+                <!--Navbar SIEMPRE hamburguesa -->
+                <nav class="navbar navbar-hamburger-only bg-color-4 mt-4 text-white">
+                  <div class="navbar-logo">CadburyStyle</div>
+              
+                  <input type="checkbox" id="nav-toggle-hamburger" class="navbar-checkbox">
+                  <label for="nav-toggle-hamburger" class="navbar-toggle">☰</label>
+              
+                  <div class="navbar-links">
+                    <a href="#">Inicio</a>
+                    <a href="#">Docs</a>
+                    <a href="#">Contacto</a>
+                  </div>
+                </nav>
+              
+                <!-- Navbar Transparente -->
+                <nav class="navbar navbar-transparent mt-4 text-white">
+                  <div class="navbar-logo">CadburyStyle</div>
+              
+                  <input type="checkbox" id="nav-toggle-transparent" class="navbar-checkbox">
+                  <label for="nav-toggle-transparent" class="navbar-toggle">☰</label>
+              
+                  <div class="navbar-links">
+                    <a href="#">Inicio</a>
+                    <a href="#">Docs</a>
+                    <a href="#">Contacto</a>
+                  </div>
+                </nav>
+              </section>
+              </div>              
+              </div>          
         <div class="container-section container-outline mb-5">
             <section id="search">
                 <h2 class="fs-30 fw-bold">Búsqueda</h2>
@@ -373,6 +472,31 @@
         </div>
       </main>
     </div>
+    <footer class="footer footer-columns bg-color-4">
+        <div class="column">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="#">Documentación</a></li>
+            <li><a href="#">Guías</a></li>
+            <li><a href="#">Tutoriales</a></li>
+          </ul>
+        </div>
+      
+        <div class="column">
+          <h4>Cadbury Style</h4>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Ejemplos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      
+        <hr>
+      
+        <div class="footer-bottom">
+          &copy; 2025 CadburyStyle. Todos los derechos reservados.
+        </div>
+      </footer>
     
     <script>
       document.addEventListener('DOMContentLoaded', function() {

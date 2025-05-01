@@ -3,7 +3,7 @@
 
 /* — Footer Base — */
 .footer {
-  background-color:  $footer-bg;
+  
   color:             $footer-text;
   padding:           $footer-padding-y $footer-padding-x;
   font-family:       $font-secondary;
@@ -81,5 +81,47 @@
 
   a:hover {
     color: $color-accent-gold;
+  }
+}
+.footer-columns {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+
+  hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    margin-bottom: 2rem;
+  }
+
+  .column {
+    margin-bottom: 1.5rem;
+
+    h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    opacity: 0.7;
   }
 }

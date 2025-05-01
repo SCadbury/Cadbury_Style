@@ -10,13 +10,17 @@
 <body>
     <nav class="navbar navbar-deep">
         <div class="navbar-logo">CadburyStyle</div>
+      
+        <input  type="checkbox" id="nav-toggle" class="navbar-checkbox">
+        <label for="nav-toggle" class="navbar-toggle  ">|||</label>
+      
         <div class="navbar-links">
-          <a href="#inicio">Inicio</a>
-          <a href="/docs/doc.html">Documentación</a>
+          <a href="/docs/home.html">Inicio</a>
+          <a href="/docs/doc.html">Docs</a>
           <a href="/docs/examples.html">Ejemplos</a>
-          <button class="theme-toggle-btn">☀️</button>
+          <button class="theme-toggle-btn">🌙</button>
         </div>
-    </nav>
+      </nav>
     <section>
         <div class="container flex justify-center align-center flex-direction-c" style="height: 100vh;">
             <img class="img__logo__dorado" src="../docs/img/logo-dorado.png" alt="Cadbury Logo" width="auto" height="100px">
@@ -44,5 +48,64 @@
     <script src="../docs/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-markup.min.js"></script>
+    <footer class="footer footer-columns bg-color-4">
+        <div class="column">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="#">Documentación</a></li>
+            <li><a href="#">Guías</a></li>
+            <li><a href="#">Tutoriales</a></li>
+          </ul>
+        </div>
+      
+        <div class="column">
+          <h4>Cadbury Style</h4>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Ejemplos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      
+        <hr>
+      
+        <div class="footer-bottom">
+          &copy; 2025 CadburyStyle. Todos los derechos reservados.
+        </div>
+      </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const themeToggleBtn = document.querySelector('.theme-toggle-btn');
+            const body = document.documentElement;
+
+            //Cambiar icono y cargar tema guardado
+            const guardarTema = localStorage.getItem('tema');
+            cambiarIcono(guardarTema || 'theme-light');
+
+            //Cambiar y guardar tema
+            themeToggleBtn.addEventListener('click', function(){
+                if (body.classList.contains('theme-light')) {
+                    body.classList.remove('theme-light');
+                    body.classList.add('theme-dark');
+                    localStorage.setItem('tema', 'theme-dark');
+                    cambiarIcono('theme-dark');
+                }else{
+                    body.classList.remove('theme-dark');
+                    body.classList.add('theme-light');
+                    localStorage.setItem('tema', 'theme-light');
+                    cambiarIcono('theme-light');
+                }
+            });
+
+            function cambiarIcono(tema){
+                if (tema === 'theme-light') {
+                    themeToggleBtn.textContent = '🌙';   
+                }else{
+                    themeToggleBtn.textContent = '☀️';
+                }
+            }
+        });
+    </script>
 </body>
 </html>
