@@ -248,7 +248,33 @@
                 <section id="badges">
                     <h2 class="fs-30 fw-bold">Badges</h2>
                     <p>Incluye scripts ligeros para interacción y personalización dinámica.</p>
-                </section>
+                  
+                    <!-- Badge Solid -->
+                    <div class="mt-3">
+                      <h3 class="fs-20 fw-bold mb-2">Badge Solid (Sólido)</h3>
+                      <span class="badge badge-solid badge-primary">Sólido Primario</span>
+                      <span class="badge badge-solid badge-secondary">Sólido Secundario</span>
+                      <span class="badge badge-solid badge-warning">Sólido Advertencia</span>
+                      <span class="badge badge-solid badge-featured">Sólido Destacado</span>
+                      <span class="badge badge-solid badge-disabled">Sólido Desactivado</span>
+                    </div>
+                  
+                    <!-- Badge Minimal -->
+                    <div class="mt-3">
+                      <h3 class="fs-20 fw-bold mb-2">Badge Minimal (Minimalista)</h3>
+                      <span class="badge badge-minimal badge-primary">Minimal Primario</span>
+                      <span class="badge badge-minimal badge-secondary">Minimal Secundario</span>
+                      <span class="badge badge-minimal badge-warning">Minimal Advertencia</span>
+                      <span class="badge badge-minimal badge-featured">Minimal Destacado</span>
+                      <span class="badge badge-minimal badge-disabled">Minimal Desactivado</span>
+                    </div>
+                  
+                    <!-- Badge Ghost -->
+                    <div class="mt-3">
+                      <h3 class="fs-20 fw-bold mb-2">Badge Ghost (Fantasma)</h3>
+                      <span class="badge badge-ghost">Badge Fantasma</span>
+                    </div>
+                  </section>                  
             </div>
           <div class="container-section container-outline mb-5">
               <section id="botones">
@@ -365,7 +391,7 @@
                 <p>Barra de navegación superior con estilos Cadbury.</p>
                 
                 <!--Navbar Responsive Toggle -->
-                <nav class="navbar navbar-deep">
+                <nav class="navbar navbar-deep navbar-static" style = "position: static;">
                     <div class="navbar-logo">CadburyStyle</div>
                   
                     <input  type="checkbox" id="nav-toggle" class="navbar-checkbox">
@@ -378,9 +404,9 @@
                       <button class="theme-toggle-btn">🌙</button>
                     </div>
                   </nav>
-                <!--Navbar SIEMPRE hamburguesa -->
-                <nav class="navbar navbar-hamburger-only bg-color-4 mt-4 text-white">
-                  <div class="navbar-logo">CadburyStyle</div>
+                <!--Navbar  hamburguesa -->
+                <nav class="navbar navbar-static position-fixed navbar-hamburger-only bg-color-4 mt-4 text-white navbar-static" style = "position: static;">
+                  <div class="navbar-logo navbar-static">CadburyStyle</div>
               
                   <input type="checkbox" id="nav-toggle-hamburger" class="navbar-checkbox">
                   <label for="nav-toggle-hamburger" class="navbar-toggle">☰</label>
@@ -393,7 +419,7 @@
                 </nav>
               
                 <!-- Navbar Transparente -->
-                <nav class="navbar navbar-transparent mt-4 text-white">
+                <nav class="navbar navbar-transparent mt-4 text-white " style = "position: static;">
                   <div class="navbar-logo">CadburyStyle</div>
               
                   <input type="checkbox" id="nav-toggle-transparent" class="navbar-checkbox">
@@ -405,9 +431,9 @@
                     <a href="#">Contacto</a>
                   </div>
                 </nav>
+             
               </section>
               </div>              
-              </div>          
         <div class="container-section container-outline mb-5">
             <section id="search">
                 <h2 class="fs-30 fw-bold">Búsqueda</h2>
