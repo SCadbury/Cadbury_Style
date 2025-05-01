@@ -1,64 +1,65 @@
-  @use 'variables';
-  @use 'typography';
-  
+@use '../base/typography' as *;
+@use '../base/variables' as v;
+@use '../utilities/colors' as *;
+
   // Alertas
   
   .alerta-exito {
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    color: $color-white;
-    background-color: $alert-success;
+    color: $text-color-white;
+    background-color: v.$alert-success;
   }
   
   .alerta-exito-sb {
     padding: 1rem;
     margin-bottom: 1rem;
-    color: $color-white;
-    background-color: $alert-success;
+    color: $text-color-white;
+    background-color: v.$alert-success;
   }
 
   .alerta-info {
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    color: $color-white;
-    background-color: $alert-info;
+    color: $text-color-white;
+    background-color: v.$alert-info;
   }
  
   .alerta-info-sb {
     padding: 1rem;
     margin-bottom: 1rem;
-    color: $color-brown;
-    background-color: $alert-info;
+    color: $text-color-white;
+    background-color: v.$alert-info;
   }
 
   .alerta-advertencia {
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    background-color: $alert-warning;
-    color: $color-brown;
+    background-color: v.$alert-warning;
+    color: $text-color-brown;
   }
   .alerta-advertencia-sb {
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: $alert-warning;
-    color: $color-brown;
+    background-color: v.$alert-warning;
+    color: $text-color-brown;
   }
 
   .alerta-error {
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    color: $color-white;
-    background-color: $alert-warning;
+    color: $text-color-white;
+    background-color: v.$alert-danger;
   }
   
   .alerta-error-sb {
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    color: $color-white;
-    background-color: $alert-warning;
+    color: $text-color-white;
+    background-color: v.$alert-danger;
   }

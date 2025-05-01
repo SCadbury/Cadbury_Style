@@ -1,5 +1,6 @@
 /* Variables */
 @use '../base/variables' as *;
+@use '../base/typography' as *;
 
 /* Estilos Generales */
 .ds-btn {
@@ -15,6 +16,7 @@
 }
 
 .ds-btn-primary {
+  @extend .ds-btn;
   background-color: $color-primary;
 }
 
@@ -23,6 +25,7 @@
 }
 
 .ds-btn-secondary {
+  @extend .ds-btn;
   background-color: $color-accent-gold;
   color: $color-primary-dark;
 }
@@ -33,6 +36,7 @@
 }
 
 .ds-btn-accent {
+  @extend .ds-btn;
   background-color: $color-primary-dark;
 }
 
@@ -41,6 +45,7 @@
 }
 
 .ds-btn-light {
+  @extend .ds-btn;
   background-color: $color-white;
   color: $color-primary;
 }
@@ -51,6 +56,7 @@
 }
 
 .ds-btn-brown {
+  @extend .ds-btn;
   background-color: $color-brown;
   color: $color-white;
 }
@@ -61,6 +67,7 @@
 
 /* Botones con Bordes Dash */
 .ds-btn-dash-lilac {
+  @extend .ds-btn;
   border: 2px dashed $color-primary;
   background-color: transparent;
   color: $color-primary;
@@ -72,6 +79,7 @@
 }
 
 .ds-btn-dash-gold {
+  @extend .ds-btn;
   border: 2px dashed $color-accent-gold;
   background-color: transparent;
   color: $color-accent-gold;
@@ -83,6 +91,7 @@
 }
 
 .ds-btn-dash-dark {
+  @extend .ds-btn;
   border: 2px dashed $color-primary-dark;
   background-color: transparent;
   color: $color-primary-dark;
@@ -94,6 +103,7 @@
 }
 
 .ds-btn-dash-brown {
+  @extend .ds-btn;
   border: 2px dashed $color-brown;
   background-color: transparent;
   color: $color-brown;
@@ -106,6 +116,7 @@
 
 /* Botones con Bordes Cuadrados */
 .ds-btn-square-lilac {
+  @extend .ds-btn;
   border: 2px solid $color-primary;
   background-color: transparent;
   color: $color-primary;
@@ -118,6 +129,7 @@
 }
 
 .ds-btn-square-gold {
+  @extend .ds-btn;
   border: 2px solid $color-accent-gold;
   background-color: transparent;
   color: $color-accent-gold;
@@ -130,6 +142,7 @@
 }
 
 .ds-btn-square-dark {
+  @extend .ds-btn;
   border: 2px solid $color-primary-dark;
   background-color: transparent;
   color: $color-primary-dark;
@@ -142,6 +155,7 @@
 }
 
 .ds-btn-square-brown {
+  @extend .ds-btn;
   border: 2px solid $color-brown;
   background-color: transparent;
   color: $color-brown;
@@ -153,28 +167,62 @@
   color: $color-white;
 }
 
+.ds-btn-chocolate {
+  @extend .ds-btn;
+  background-color: $color-brown;
+  border-radius: 0%;
+  color: $color-white;
+  position: relative;
+  overflow: hidden;
+  padding: 0.8rem 1.5rem;
+  font-family: $font-secondary;
+  font-size: 1rem;
+  box-shadow:
+    inset 0 0.2rem 0 rgba(255, 255, 255, 0.08),
+    0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+  line-height: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 1rem 1rem;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &:hover {
+  background-color: $color-brown opacity($color: #761717);
+  transition: background-color 0.3s ease;
+  }
+}
+
+
 /* Tamaños de botones */
 .ds-btn-xs {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.6rem;
-  }
-  
-  .ds-btn-sm {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
-  }
-  
-  .ds-btn-md {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
-  
-  .ds-btn-lg {
-    font-size: 1.2rem;
-    padding: 0.8rem 1.5rem;
-  }
-  
-  .ds-btn-xl {
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-  }
+  font-size: 0.7rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.ds-btn-sm {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.ds-btn-md {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.ds-btn-lg {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+}
+
+.ds-btn-xl {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}

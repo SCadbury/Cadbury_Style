@@ -5,102 +5,379 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CadburyStyle</title>
     <script>
-      // Aplicando primero el tema guardado antes de que cargue el CSS
-      const temaGuardado = localStorage.getItem('tema') || 'theme-dark'; // Oscuro por defecto
+      const temaGuardado = localStorage.getItem('tema') || 'theme-dark'; 
       document.documentElement.classList.add(temaGuardado);
     </script>
     <link rel="stylesheet" href="CadburyStyle.css">
 </head>
-<body>
-    <nav class="navbar navbar-deep">
+<body class="pd-0 m-0">
+    <nav class="navbar navbar-deep bg-color-4">
         <div class="navbar-logo">CadburyStyle</div>
         <div class="navbar-links">
-            <a href="#inicio">Inicio</a>
+            <a href="/docs/home.html">Inicio</a>
             <a href="/docs/doc.html">Documentación</a>
             <a href="/docs/examples.html">Ejemplos</a>
             <button class="theme-toggle-btn" aria-label="Cambiar tema">🌙</button>
         </div>
     </nav>
 
-    <div class="docs-layout">
-        <aside class="sidebar">
+    <div class="flex">
+        <aside class="sidebar sidebar-fixed">
+            <div class="mt-2 mb-2">
+                <h1 class="text-color-white fs-28 text-center fw-bold">Menú de Navegación</h1>
+            </div>
             <nav>
-                <ul>
-                    <li><a href="#inicio">Introducción</a></li>
-                    <li><a href="#botones">Botones</a></li>
-                    <li><a href="#contenidos">Contenidos</a></li>
-                    <li><a href="#javascript">JavaScript</a></li>
-                    <li><a href="#accesibilidad">Accesibilidad</a></li>
-                </ul>
+                <div class="nav-section">
+                    <h2 class="text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">General</h2>
+                    <ul>
+                        <li><a href="#inicio">Introducción</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h2 class=" text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">Base</h3>
+                    <ul>
+                        <li><a href="#texto">Texto</a></li>
+                        <li><a href="#variable">Variable</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h2 class="text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">Componentes</h3>
+                    <ul>
+                        <li><a href="#alertas">Alertas</a></li>
+                        <li><a href="#badges">Badges</a></li>
+                        <li><a href="#botones">Botones</a></li>
+                        <li><a href="#cards">Tarjetas</a></li>
+                        <li><a href="#footer">Footer</a></li>
+                        <li><a href="#forms">Formularios</a></li>
+                        <li><a href="#navbar">Navbar</a></li>
+                        <li><a href="#search">Busqueda</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h2 class="text-color-accent-gold fs-20 text-center fw-bold mt-1 mb-1">Layout</h3>
+                    <ul>
+                        <li><a href="#container">Contenedores</a></li>
+                        <li><a href="#flex">Flex</a></li>
+                        <li><a href="#grid">Grid</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h2 class="text-color-accent-gold fs-14 text-center fw-bold mt-1 mb-1">Utilidades</h3>
+                    <ul>
+                        <li><a href="#borders">Bordes</a></li>
+                        <li><a href="#colores">Colores</a></li>
+                        <li><a href="#display">Display</a></li>
+                        <li><a href="#position">Alineaciones de texto</a></li>
+                        <li><a href="#shadow">Sombreado</a></li>
+                        <li><a href="#spacion">Margenes</a></li>
+                    </ul>
+                </div>
             </nav>
         </aside>
-
         <main class="main-content">
           <div class="container-section">
               <section id="inicio">
-                  <h1 class="fs-40 text-center fw-bold">Este es el comienzo de tu aventura con CadburyStyle!</h1>
-                  <h2 class="fs-20 text-center">Aquí encontrarás la Documentación necesaria para comenzar tu proyecto hoy!</h2>
+                  <h1 class="ff-1 fs-40 text-center fw-bold mb-3">Este es el comienzo de tu aventura con CadburyStyle!</h1>
+                  <h2 class="fs-20 text-center mb-3">Aquí encontrarás la Documentación necesaria para comenzar tu proyecto hoy!</h2>
                   <div style="text-align: center;">
                       <img src="../docs/img/Hombre_ComiendoChocolate.png" alt="" width="auto" height="300px" style="border-radius: 25px;">
                   </div>
                   <br>
-                  <p class="text-center fw-bold">Tu librería elegante para interfaces dulces y profesionales. Inspirada en la sobriedad del chocolate y la elegancia del morado Cadbury.</p>
+                  <h1 class="text-center fw-bold">Tu librería elegante para interfaces dulces y profesionales. Inspirada en la sobriedad del chocolate y la elegancia del morado Cadbury.</h1>
                   <br>
-                  <p class="text-justify">Dale un toque delicioso a tus proyectos web con esta exclusiva colección de componentes inspirados en el inconfundible sabor y calidad del chocolate Cadbury. Con una paleta de colores basada en tonos morados profundos, ricos chocolates y acentos dorados, nuestra librería ofrece una experiencia visual tan irresistible como el propio dulce.</p>
-                  <p class="text-justify">Desde botones suaves como un trozo de chocolate hasta tarjetas elegantes que reflejan la suavidad y el lujo de Cadbury, cada elemento ha sido diseñado para añadir ese toque de indulgencia a tu sitio. Los formularios emulan la cremosidad y textura perfecta, mientras que las alertas dinámicas te ofrecen una experiencia interactiva que resalta con el brillo de un chocolate premium.</p>
-                  <p class="text-justify">Nuestra barra de navegación fluye con la misma suavidad que una barra de Cadbury, guiando a tus usuarios de manera sencilla y elegante por tu web. Además, los distintivos (badges) te permiten resaltar los momentos más dulces y especiales de tu plataforma, al igual que el empaque dorado que identifica a Cadbury.</p>
-                  <p class="text-justify">Con contenedores diseñados para mejorar la experiencia de usuario y una cobertura completa de CSS y HTML, la librería <strong>Cadbury Style</strong> es la elección perfecta para que tu sitio web tenga la misma dulzura y calidad que el mejor chocolate.</p>
+                  <button class="ds-btn ds-btn-chocolate">  
+                    Chocolate
+                    <div class="bite"><span></span></div>
+                  </button>
+                  <p class="text-justify ff-2">Dale un toque delicioso a tus proyectos web con esta exclusiva colección de componentes inspirados en el inconfundible sabor y calidad del chocolate Cadbury. Con una paleta de colores basada en tonos morados profundos, ricos chocolates y acentos dorados, nuestra librería ofrece una experiencia visual tan irresistible como el propio dulce.</p><br>
+                  <p class="text-justify ff-2">Desde botones suaves como un trozo de chocolate hasta tarjetas elegantes que reflejan la suavidad y el lujo de Cadbury, cada elemento ha sido diseñado para añadir ese toque de indulgencia a tu sitio. Los formularios emulan la cremosidad y textura perfecta, mientras que las alertas dinámicas te ofrecen una experiencia interactiva que resalta con el brillo de un chocolate premium.</p><br>
+                  <p class="text-justify ff-2">Nuestra barra de navegación fluye con la misma suavidad que una barra de Cadbury, guiando a tus usuarios de manera sencilla y elegante por tu web. Además, los distintivos (badges) te permiten resaltar los momentos más dulces y especiales de tu plataforma, al igual que el empaque dorado que identifica a Cadbury.</p><br>
+                  <p class="text-justify ff-2">Con contenedores diseñados para mejorar la experiencia de usuario y una cobertura completa de CSS y HTML, la librería <strong>Cadbury Style</strong> es la elección perfecta para que tu sitio web tenga la misma dulzura y calidad que el mejor chocolate.</p>
                   <br>
-                  <p class="text-justify fs-20 fw-bold">Explora lo siguiente en nuestra librería Cadbury Style:</p>
-                  <ul class="text-justify">
-                      <li><strong>Botones</strong>: Elegantes, suaves y de colores deliciosos para una interacción suave.</li>
-                      <li><strong>Tarjetas</strong>: Ricas en detalles y con un estilo sofisticado que recuerda la textura del chocolate.</li>
-                      <li><strong>Formularios</strong>: Diseñados para ser tan agradables como un trozo de chocolate en tu boca.</li>
-                      <li><strong>Alertas</strong>: Notificaciones sutiles y atractivas, al estilo Cadbury.</li>
-                      <li><strong>Badges</strong>: Distintivos que destacan logros y momentos especiales con un toque dorado.</li>
+                  <p class="text-justify fs-20 fw-bold ">Explora lo siguiente en nuestra librería Cadbury Style:</p>
+                  <ul class="text-justify ff-2">
+                      <li><img src="/docs/img/barra-de-chocolate.png" alt="" width="auto" height="20px" style="border-radius: 25px;"><strong class="fw-bold">Botones</strong>: Elegantes, suaves y de colores deliciosos para una interacción suave.</li>
+                      <li><img src="/docs/img/barra-de-chocolate.png" alt="" width="auto" height="20px" style="border-radius: 25px;"><strong class="fw-bold">Tarjetas</strong>: Ricas en detalles y con un estilo sofisticado que recuerda la textura del chocolate.</li>
+                      <li><img src="/docs/img/barra-de-chocolate.png" alt="" width="auto" height="20px" style="border-radius: 25px;"><strong class="fw-bold">Formularios</strong>: Diseñados para ser tan agradables como un trozo de chocolate en tu boca.</li>
+                      <li><img src="/docs/img/barra-de-chocolate.png" alt="" width="auto" height="20px" style="border-radius: 25px;"><strong class="fw-bold">Alertas</strong>: Notificaciones sutiles y atractivas, al estilo Cadbury.</li>
+                      <li><img src="/docs/img/barra-de-chocolate.png" alt="" width="auto" height="20px" style="border-radius: 25px;"><strong class="fw-bold">Badges</strong>: Distintivos que destacan logros y momentos especiales con un toque dorado.</li><br>
                   </ul>
-                  <p class="text-justify">Haz que tus proyectos web sean tan irresistibles como el chocolate Cadbury con nuestra librería <strong>Cadbury Style</strong>. ¡Atrévete a hacerlos únicos y deliciosos!</p>
-                  <br>
               </section>
           </div>
-      
-          <div class="container-section container-outline">
+            <!-- BASE -->
+            <h1 class="ff-1 fs-30 fw-bold text-color-accent-gold mb-2">Base</h1>
+            <div class="container-section container-outline mb-5">
+                <section id="texto">
+                    <h2 class="fs-30 fw-bold">Texto</h2>
+                    <p class="fs-24 m-2">Tamaños para el texto</p>
+                    <section style="width: 600px;" class="m-2 p-2 grid grid-template-col-2">
+                        <div class="fs-10">Font-size 10</div>
+                        <div class="fs-12">Font-size 12</div>
+                        <div class="fs-14">Font-size 14</div>
+                        <div class="fs-16">Font-size 16</div>
+                        <div class="fs-18">Font-size 18</div>
+                        <div class="fs-20">Font-size 20</div>
+                        <div class="fs-22">Font-size 22</div>
+                        <div class="fs-24">Font-size 24</div>
+                        <div class="fs-26">Font-size 26</div>
+                        <div class="fs-28">Font-size 28</div>
+                        <div class="fs-30">Font-size 30</div>
+                        <div class="fs-32">Font-size 32</div>
+                        <div class="fs-34">Font-size 34</div>
+                        <div class="fs-36">Font-size 36</div>
+                        <div class="fs-38">Font-size 38</div>
+                        <div class="fs-40">Font-size 40</div>
+                        <div class="fs-42">Font-size 42</div>
+                        <div class="fs-44">Font-size 44</div>
+                        <div class="fs-46">Font-size 46</div>
+                        <div class="fs-48">Font-size 48</div>
+                        <div class="fs-50">Font-size 50</div>
+                    </section>
+                    
+                    <p class="fs-24 m-2">Tipos de weight</p>
+                    <section style="width: 600px;" class="m-2 p-2 grid grid-template-col-2">
+                        <div class="fw-light">Weight light</div>
+                        <div class="fw-regular">Weight regular</div>
+                        <div class="fw-semibold">Weight semibold</div>
+                        <div class="fw-bold">Weight bold</div>
+                    </section>
+                    
+                    <p class="fs-24 m-2">Colores para el texto</p>
+                    <section style="width: 600px;" class="m-2 p-2 grid grid-template-col-2">
+                        <div class="text-color-primary-dark">Primary dark</div>
+                        <div class="text-color-primary">Primary</div>
+                        <div class="text-color-accent-gold">Accent gold</div>
+                        <div class="text-color-white" style="background-color: black;">White</div>
+                        <div class="text-color-primary-deep-dark">Primary deep dark</div>
+                        <div class="text-color-brown">Brown</div>
+                        <div class="text-color-success">Success</div>
+                        <div class="text-color-info">Info</div>
+                        <div class="text-color-warning">Warning</div>
+                        <div class="text-color-danger">Danger</div>
+                    </section>
+                    
+                    <p class="fs-24 m-2">Fuentes para el texto</p>
+                    <section style="width: 600px;" class="m-2 p-2 grid grid-template-col-2">
+                        <div class="ff-primary">Font family 1</div>
+                        <div class="ff-secondary">Font family 2</div>
+                    </section>
+                    <div class="container-code">
+                        <span class="comment">&lt;!-- Ejemplos de uso --&gt;</span><br>
+                        <!-- Tamaños de fuente -->
+                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"fs-10"</span><span class="variable">></span>Texto tamaño 10<span class="variable"><</span>/p<span class="variable">></span>
+                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"fs-16"</span><span class="variable">></span>Texto tamaño 16<span class="variable"><</span>/p<span class="variable">></span>
+                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"fs-24"</span><span class="variable">></span>Texto tamaño 24<span class="variable"><</span>/p<span class="variable">></span>
+                        <!-- Peso de fuente -->
+                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"fw-light"</span><span class="variable">></span>Texto con peso light<span class="variable"><</span>/p<span class="variable">></span>
+                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"fw-bold"</span><span class="variable">></span>Texto con peso bold<span class="variable"><</span>/p<span class="variable">></span>
+                        <!-- Colores de texto -->
+                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"text-color-primary"</span><span class="variable">></span>Texto en color primario<span class="variable"><</span>/p<span class="variable">></span>
+                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"text-color-warning"</span><span class="variable">></span>Texto en color de advertencia<span class="variable"><</span>/p<span class="variable">></span>
+                        <!-- Fuentes -->
+                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"ff-primary"</span><span class="variable">></span>Texto con fuente primaria<span class="variable"><</span>/p<span class="variable">></span>
+                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"ff-secondary"</span><span class="variable">></span>Texto con fuente secundaria<span class="variable"><</span>/p<span class="variable">></span>
+                        
+                    </div>          
+            </section>
+            </div>
+            <div class="container-section container-outline mb-5">
+                <section id="variable">
+                    <h2 class="fs-30 fw-bold">Variables</h2><br>
+                    <p>Listado de variables disponibles para personalización de estilos.</p><br>
+
+                    <div class="container-code">
+                        <span class="comment">&lt;!-- Ejemplos de uso de las variables SCSS --&gt;</span><br>
+                        
+                        <!-- Usar la paleta base de colores -->
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"bg-color-primary"</span><span class="variable">></span>Texto con fondo morado base<span class="variable"><</span>/div><br>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"text-color-accent-gold"</span><span class="variable">></span>Texto dorado de acento<span class="variable"><</span>/div><br>
+                        
+                        <!-- Usar sombras -->
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"shadow-sm"</span><span class="variable">></span>Elemento con sombra pequeña<span class="variable"><</span>/div><br>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"shadow-lg"</span><span class="variable">></span>Elemento con sombra grande<span class="variable"><</span>/div><br>
+                        
+                        <!-- Usar colores para alertas -->
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"alert alert-success"</span><span class="variable">></span>Alerta de éxito<span class="variable"><</span>/div><br>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"alert alert-warning"</span><span class="variable">></span>Alerta de advertencia<span class="variable"><</span>/div><br>
+                        
+                        <!-- Usar variables de tema oscuro y claro -->
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"dark-theme"</span><span class="variable">></span>Modo oscuro: fondo y texto invertido<span class="variable"><</span>/div><br>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"light-theme"</span><span class="variable">></span>Modo claro: fondo y texto suave<span class="variable"><</span>/div><br>
+                        
+                        <!-- Usar los tamaños de fuente y espaciado -->
+                        <span class="variable"><</span>p <span class="function">class=</span><span class="string">"fs-16"</span><span class="variable">></span>Texto con tamaño de fuente 16px<span class="variable"><</span>/p><br>
+                        <span class="variable"><</span>div <span class="function">class=</span><span class="string">"p-4"</span><span class="variable">></span>Div con padding de 4rem (espaciado 4)</span><br>
+                    </div>                    
+                </section>
+            </div>
+            <!-- COMPONENTES -->
+            <h1 class="ff-1 fs-30 fw-bold text-color-accent-gold">Componentes</h1><br>
+            <div class="container-section container-outline mb-5">
+                <section id="alertas">
+                    <h2 class="fs-30 fw-bold">Alertas</h2><br>
+                    <p>Explora 4 tipos de alertas de diferentes tipos: éxito, información, aviso, error.</p>
+                    <br>
+                    <!-- Ejemplos visuales de las alertas -->
+                    <div class="alerta-exito">¡Operación exitosa!</div>
+                    <div class="alerta-exito-sb">¡Operación exitosa!</div>
+            
+                    <div class="alerta-info">Información importante</div>
+                    <div class="alerta-info-sb">Información importante</div>
+            
+                    <div class="alerta-advertencia">Cuidado, esto es una advertencia</div>
+                    <div class="alerta-advertencia-sb">Cuidado, esto es una advertencia</div>
+            
+                    <div class="alerta-error">Error en la operación</div>
+                    <div class="alerta-error-sb">Error en la operación</div>
+            
+                    <h2>Ejemplo de uso</h2>
+                    <!-- Código de uso en HTML dentro del container-code -->
+                    <div class="container-code">
+
+                        </code>
+                      
+                    </div>
+                </section>
+            </div>
+            
+            <div class="container-section container-outline mb-5">
+                <section id="badges">
+                    <h2 class="fs-30 fw-bold">Badges</h2>
+                    <p>Incluye scripts ligeros para interacción y personalización dinámica.</p>
+                </section>
+            </div>
+          <div class="container-section container-outline mb-5">
               <section id="botones">
                   <h2 class="fs-30 fw-bold">Botones</h2>
-                  <p>CadburyStyle contiene una gran variedad de botones prediseñados y la oportunidad de personalizar el tuyo.</p>
+                  <p class="font-secondary">CadburyStyle contiene una gran variedad de botones prediseñados y la oportunidad de personalizar el tuyo.</p>
                   <br>
+                  <div class="text-center mb-2">
+                    <button class="ds-btn ds-btn-primary">Botón Primario</button>
+                    <button class="ds-btn ds-btn-secondary">Botón Secundario</button>
+                    <button class="ds-btn ds-btn ds-btn-accent">Botón de Acento</button>
+                    <button class="ds-btn ds-btn ds-btn-light">Botón Claro</button>
+                    <button class="ds-btn ds-btn-brown">Botón Marrón</button>
+                    <br><br>
+                    <button class="ds-btn ds-btn-sm text-color-primary">Botón Pequeño</button>
+                    <button class="ds-btn ds-btn-md text-color-primary">Botón Medio</button>
+                    <button class="ds-btn ds-btn-lg text-color-primary">Botón Grande</button>
+                    <br><br>
+                    <button class="ds-btn ds-btn-dash-lilac bg-color-3">Botón Dash Lilac</button>
+                    <button class="ds-btn ds-btn-dash-gold bg-color-2">Botón Dash Gold</button>
+                    <button class="ds-btn ds-btn-dash-dark bg-color-3">Botón Dash Dark</button>
+                    <br><br>
+                    <button class="ds-btn ds-btn-square-lilac bg-color-7-grad">Botón Cuadrado Lilac</button>
+                    <button class="ds-btn ds-btn-square-gold">Botón Cuadrado Gold</button>
+                    <button class="ds-btn ds-btn-square-dark bg-color-8-grad">Botón Cuadrado Dark</button>
+                  </div>
                   <div class="container-code">
-                    Aqui va el codigo
-                </div>
+                    <span class="comment">&lt;!-- Ejemplos de uso --&gt;</span><br>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-primary"</span><span class="variable">></span>Botón Primario<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-secondary"</span><span class="variable">></span>Botón Secundario<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn ds-btn-accent"</span><span class="variable">></span>Botón de Acento<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn ds-btn-light"</span><span class="variable">></span>Botón Claro<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-brown"</span><span class="variable">></span>Botón Marrón<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-sm text-color-primary"</span><span class="variable">></span>Botón Pequeño<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-md text-color-primary"</span><span class="variable">></span>Botón Medio<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-lg text-color-primary"</span><span class="variable">></span>Botón Grande<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-dash-lilac bg-color-3"</span><span class="variable">></span>Botón Dash Lilac<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-dash-gold bg-color-2"</span><span class="variable">></span>Botón Dash Gold<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-dash-dark bg-color-3"</span><span class="variable">></span>Botón Dash Dark<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-square-lilac bg-color-7-grad"</span><span class="variable">></span>Botón Cuadrado Lilac<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-square-gold"</span><span class="variable">></span>Botón Cuadrado Gold<span class="variable"><</span>/button<span class="variable">></span>
+                    <span class="variable"><</span>button <span class="function">class=</span><span class="string">"ds-btn ds-btn-square-dark bg-color-8-grad"</span><span class="variable">></span>Botón Cuadrado Dark<span class="variable"><</span>/button<span class="variable">></span>
+                  </div>                  
               </section>
           </div>  
-          <div class="container-section container-outline mb-1">
-              <section id="contenidos">
-                  <h2 class="fs-30 fw-bold">Alertas</h2>
-                  <p>Explora 4 tipos de alertas de diferentes tipo: éxito, información, aviso, error.</p>
-                  <br>
-                  <div class="container-code">
-                    Aqui va el codigo
-                </div>
-              </section>
-          </div>
-          <div class="container-section">
-              <section id="javascript">
-                  <h2>JavaScript</h2>
-                  <p>Incluye scripts ligeros para interacción y personalización dinámica.</p>
-              </section>
-          </div>
-      
-          <div class="container-section">
-              <section id="accesibilidad">
-                  <h2>Accesibilidad</h2>
+          <div class="container-section container-outline mb-5">
+              <section id="cards">
+                  <h2 class="fs-30 fw-bold">Tarjetas</h2>
                   <p>Construido con buenas prácticas para que todos disfruten tu producto, sin importar sus capacidades.</p>
               </section>
           </div>
+          <div class="container-section container-outline mb-5">
+            <section id="footer">
+                <h2 class="fs-30 fw-bold">Footer</h2>
+                <p>Pie de página estilizado para rematar tus sitios con elegancia.</p>
+            </section>
+        </div>
+        <div class="container-section container-outline mb-5">
+            <section id="forms">
+                <h2 class="fs-30 fw-bold">Formularios</h2>
+                <p>Campos de entrada elegantes con experiencia de usuario suave.</p>
+            </section>
+        </div>
+        <div class="container-section container-outline mb-5">
+            <section id="navbar">
+                <h2 class="fs-30 fw-bold">Navbar</h2>
+                <p>Barra de navegación superior con estilos Cadbury.</p>
+            </section>
+        </div>
+        <div class="container-section container-outline mb-5">
+            <section id="search">
+                <h2 class="fs-30 fw-bold">Búsqueda</h2>
+                <p>Componentes para entrada de texto y filtros de búsqueda.</p>
+            </section>
+        </div>
+        <h1 class="ff-1 fs-30 fw-bold text-color-accent-gold">Layout</h1>
+        <div class="container-section container-outline mb-5">
+            <section id="container">
+                <h2 class="fs-30 fw-bold">Contenedores</h2>
+                <p>Elementos estructurales para organizar tus componentes.</p>
+            </section>
+        </div>
+        <div class="container-section container-outline mb-5">
+            <section id="flex">
+                <h2 class="fs-30 fw-bold">Flexbox</h2>
+                <p>Clases de utilidad para diseño flexible y alineación.</p>
+            </section>
+        </div>
+        <div class="container-section container-outline mb-5">
+            <section id="grid">
+                <h2 class="fs-30 fw-bold">Grid</h2>
+                <p>Sistema de cuadrícula para un diseño estructurado.</p>
+            </section>
+        </div>
+        <h1 class="ff-1 fs-30 fw-bold text-color-accent-gold">Utilidades</h1>
+        <div class="container-section container-outline mb-5">
+            <section id="borders">
+                <h2 class="fs-30 fw-bold">Bordes</h2>
+                <p>Opciones de bordes redondeados y líneas decorativas.</p>
+            </section>
+        </div>
+        <div class="container-section container-outline mb-5">
+            <section id="colores">
+                <h2 class="fs-30 fw-bold">Colores</h2>
+                <p>Paleta de colores inspirada en el chocolate y el lujo Cadbury.</p>
+            </section>
+        </div>
+        <div class="container-section container-outline mb-5">
+            <section id="display">
+                <h2 class="fs-30 fw-bold">Display</h2>
+                <p>Utilidades para controlar cómo se muestra un elemento.</p>
+            </section>
+        </div>
+        <div class="container-section container-outline mb-5">
+            <section id="position">
+                <h2 class="fs-30 fw-bold">Alineaciones de texto</h2>
+                <p>Clases para justificar, alinear al centro o a los lados tu contenido.</p>
+            </section>
+        </div>
+        <div class="container-section container-outline mb-5">
+            <section id="shadow">
+                <h2 class="fs-30 fw-bold">Sombreado</h2>
+                <p>Estilos para dar profundidad y realce con sombras suaves.</p>
+            </section>
+        </div>
+        <div class="container-section container-outline mb-5">
+            <section id="spacion">
+                <h2 class="fs-30 fw-bold">Márgenes y Espaciado</h2>
+                <p>Clases de espaciado interno y externo para control de layout.</p>
+            </section>
+        </div>
       </main>
-      
     </div>
-
+    
     <script>
       document.addEventListener('DOMContentLoaded', function() {
           const themeToggleBtn = document.querySelector('.theme-toggle-btn');

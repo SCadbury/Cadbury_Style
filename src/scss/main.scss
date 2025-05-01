@@ -1,15 +1,37 @@
-@use 'base/variables' as *;
+/*main.scss*/
+
+/* Base */
+@use 'base/fonts';
 @use 'base/reset';
 @use 'base/typography';
-@use 'components/navbar';
-@use 'components/navbar-themes';
+@use 'base/variables' as *;
+
+/* Componentes */
+@use 'components/alerts';
 @use 'components/badges';
 @use 'components/buttons';
 @use 'components/cards';
 @use 'components/footer';
-@use 'utilities/colors';
-@use 'utilities/spacing';
-@use 'utilities/borders';
-@use 'utilities/display';
+@use 'components/forms';
+@use 'components/navbar-themes';
+@use 'components/navbar';
+@use 'components/search';
+
+/* Layout */
 @use 'layout/containers';
 @use 'layout/documentation';
+@use 'layout/flex';
+@use 'layout/grid';
+
+/* Utilities */
+@use 'utilities/borders';
+@use 'utilities/colors';
+@use 'utilities/display';
+@use 'utilities/position';
+@use 'utilities/shadows';
+@use 'utilities/spacing';
+
+
+
+
+
